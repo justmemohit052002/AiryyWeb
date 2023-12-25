@@ -5,7 +5,7 @@ import { CiMenuBurger } from "react-icons/ci";
 const Navbar = () => {
   return (
     <>
-      <div className=" xs:hidden ss:hidden  md:flex  w-screen fixed z-1 p-8  flex-row items-center justify-between ">
+      <div className=" xs:hidden   md:flex  w-screen fixed z-20 text-white p-8  flex-row items-center justify-between ">
         <CanvasModel />
 
         <div className=" flex flex-row gap-4 items-center ">
@@ -15,12 +15,12 @@ const Navbar = () => {
         </div>
       </div>
 
-      <div className=" md:hidden    w-screen fixed z-1 p-8 flex flex-row items-center justify-between">
+      <div className="w-screen fixed z-10 text-white p-8 flex flex-row items-center justify-between">
         {/* logo */}
         <div>AiRYY Rides</div>
         {/* menu */}
-        <div>
-          <CiMenuBurger size={26} />
+        <div className="">
+          <CiMenuBurger  size={24} width={'20px'} />
         </div>
       </div>
     </>
