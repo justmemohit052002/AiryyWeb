@@ -10,8 +10,8 @@ module.exports = {
       },
     },
     screens: {
-      xs:{'min':'320px','max':'568px'},
-      ss:{'min':'568px','max':'640px'},
+      xs:{'min':'320px','max':'440px'},
+      ss:{'min':'440px','max':'640px'},
       sm: '640px',
       md: '768px',
       lg: '960px',
