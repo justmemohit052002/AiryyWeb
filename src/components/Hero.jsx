@@ -29,7 +29,7 @@ const Hero = () => {
           </span>
         </div>
 
-        <div className=" sm:hidden relative top-[240px]   z-10">
+        <div className=" cursor-pointer sm:hidden relative top-[240px]   z-10">
           <div className="w-[145px] h-[38px] px-4 py-5 bg-white rounded-md justify-center items-center gap-3.5 inline-flex">
             <div className="text-black text-sm font-semibold font-['Inter'] leading-[18px]">
               Contact Now
@@ -41,7 +41,7 @@ const Hero = () => {
 
 
  {/* Screen */}
-      <div className=" xs:hidden ss:hidden h-[135px] left-[46px] top-[344px] lg:top-[254px] z-20 absolute">
+      <div className=" xs:hidden ss:hidden h-[135px] left-[46px]  lg:left-[90px]  top-[344px] lg:top-[254px] z-20 absolute">
 
         <div className="w-[483.30px] text-yellow-500 left-0 top-0 absolute text-[54px] font-medium font-['Fredoka'] uppercase tracking-[6.48px]">
           AiRYY Rides!
@@ -54,11 +54,11 @@ const Hero = () => {
 
 
      
-      <div className="xs:hidden ss:hidden w-[595px] h-[49px] left-[46px] top-[539px] lg:top-[439px] z-20 absolute text-white text-[19px] font-semibold font-['Inter'] leading-[18px]">
+      <div className="xs:hidden ss:hidden w-[595px] h-[49px] left-[46px] md:left-[86px] top-[539px] lg:top-[439px] z-20 absolute text-white text-[19px] font-semibold font-['Inter'] leading-[18px]">
         Your journey, your vehicle – experience travel like never before.
         <br />
       </div>
-      <div className="xs:hidden ss:hidden px-4 py-2.5  left-[46px] top-[627px] lg:top-[527px] absolute z-20 rounded-[10px] border-2 border-yellow-500 justify-start items-start gap-2 inline-flex">
+      <div className="xs:hidden cursor-pointer ss:hidden px-4 py-2.5  left-[46px] md:left-[86px] top-[627px] lg:top-[527px] absolute z-20 rounded-[10px] border-2 border-yellow-500 justify-start items-start gap-2 inline-flex">
         <div className="text-yellow-400 text-[15px] font-semibold font-['Inter'] leading-[18px]">
           Learn More
         </div>
@@ -67,16 +67,18 @@ const Hero = () => {
 
 
       {/* Image and gradient background */}
-      <div className="xs:left-[35vw] ss:left-[43vw] sm:left-[20vw] lg:left-[48vw]  -bottom-[60vh]   relative  sm:-bottom-[48vh] lg:-bottom-[40vh]  ">
+      <div className="xs:left-[35vw] ss:left-[43vw] sm:left-[20vw] lg:left-[48vw]  xl:-bottom-[30vh]  -bottom-[60vh]   relative  sm:-bottom-[48vh] lg:-bottom-[40vh]  xl:left-[60vw]">
         <img
           className="xs:w-[22rem] xs:h-[20rem] ss:w-[22rem] ss:h-[20rem]  sm:w-[1115px] sm:h-[785px]  lg:w-[615px] lg:h-[485px]   z-10" // Increased z-index for the image
           alt="Activas"
           src={Bike1}
           style={{ borderRadius: 9999, position: "absolute" }}
         />
-        <div className="lg:hidden absolute xs:-left-[45vw] xs:-top-[20vh] ss:-left-[45vw] ss:-top-[18vh]  sm:-left-[20vw] sm:-top-[15vh]   -z-10">
+
+   
+        <div className=" absolute xs:-left-[45vw] xs:-top-[20vh] ss:-left-[45vw] ss:-top-[18vh]  sm:-left-[20vw] sm:-top-[15vh] xl:-top-[25ch]  -z-10">
           <div
-            className="absolute h-[1000px] w-[1450px]  sm:h-[130rem] sm:w-[205rem] bg-gradient-to-b from-yellow-400 via-transparent to-transparent rounded-[743.5px/595.5px]"
+            className="absolute h-[1000px] xl:h-[1300px] w-[1450px]  sm:h-[130rem] sm:w-[205rem] bg-gradient-to-b from-yellow-400 via-transparent to-transparent rounded-[743.5px/595.5px]"
             style={{
               position: "relative",
             }}
