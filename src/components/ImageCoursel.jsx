@@ -1,9 +1,7 @@
 import React, { useRef } from "react";
 import Slider from "react-slick";
-// import "slick-carousel/slick/slick.css";
-// import "slick-carousel/slick/slick-theme.css";
-import KeyboardArrowLeftIcon from "@mui/icons-material/KeyboardArrowLeft";
-import KeyboardArrowRightIcon from "@mui/icons-material/KeyboardArrowRight";
+
+import BIke1 from "../assets/out-2.png"
 import ActivaOne from "../assets/ActivaOne.png";
 import ActivaTwo from "../assets/ActivaTwo.png";
 import ActivaThree from "../assets/ActivaThree.png";
@@ -13,6 +11,7 @@ import ActivaFive from "../assets/ActivaFive.png";
 const ImageCarousel = () => {
   const sliderRef = useRef(null);
   const sliderImages = [
+    BIke1,
     ActivaTwo,
      ActivaThree ,
     ActivaFour,
@@ -41,25 +40,23 @@ const ImageCarousel = () => {
 
   return (
     <div className="flex flex-row items-center justify-evenly">
-      <button className="button mx-2" onClick={previous}>
-        <KeyboardArrowLeftIcon />
-      </button>
-      <div className="w-[220px] mt-4 sm:w-96">
+      
+      <div className="xs:w-[22rem] xs:h-[20rem] ss:w-[22rem] ss:h-[20rem]  sm:w-[1115px] sm:h-[785px]  lg:w-[615px] lg:h-[485px]   z-10" >
         <Slider ref={sliderRef} {...settings}>
           {sliderImages.map((image, index) => (
+
             <img
+            
               key={index}
               src={image}
               alt={`Slide ${index + 1}`}
-              className="w-[200px] sm:h-80 sm:w-96"
+              
             />
           ))}
         </Slider>
       </div>
 
-      <button className="button mx-2" onClick={next}>
-        <KeyboardArrowRightIcon/>
-      </button>
+  
     </div>
   );
 };

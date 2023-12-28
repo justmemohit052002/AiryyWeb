@@ -1,7 +1,7 @@
 import React from "react";
 import CanvasModel from "./3dLogo/CanvasModel";
 import { CiMenuBurger } from "react-icons/ci";
-
+import Logo from "../assets/airryLogo.webp"
 const Navbar = () => {
   // Scroll to the target section
   const scrollToSection = (sectionId) => {
@@ -13,9 +13,10 @@ const Navbar = () => {
 
   return (
     <>
-      <div className=" z-[100]">
-        <div className="xs:hidden ss:hidden  sm:hidden absolute md:flex   md:left-[10px]    lg:left-[60px] xl:left-[20px] top-[20px] lg:top-[0px]  w-screen   z-[100] text-white md:p-8 lg:py-8 lg:px-12  flex-row items-center justify-between">
-          <CanvasModel />
+      <div className=" fixed z-[100]">
+        <div className="xs:hidden bg-blend-color bg-no-repeat ss:hidden  sm:hidden absolute md:flex   md:left-[10px]    lg:left-[60px] xl:left-[20px] top-[20px] lg:top-[0px]  w-screen   z-[100] text-white md:p-8 lg:py-8 lg:px-12  flex-row items-center justify-between">
+          <img className="w-24 bg-blend-color bg-no-repeat" src={Logo} alt=''/>
+          
 
           <div className="flex flex-row gap-4 lg:gap-8 relative md:-left-[100px] sm:text-[1.7rem] md:text-3xl lg:text-xl  items-center">
             <a
