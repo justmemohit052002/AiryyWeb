@@ -1,7 +1,7 @@
 import React from "react";
 import CanvasModel from "./3dLogo/CanvasModel";
 import { CiMenuBurger } from "react-icons/ci";
-
+import Logo from "../assets/airryLogo.webp"
 const Navbar = () => {
   // Scroll to the target section
   const scrollToSection = (sectionId) => {
@@ -13,11 +13,12 @@ const Navbar = () => {
 
   return (
     <>
-      <div className="lg:hidden z-[100]">
-        <div className="xs:hidden ss:hidden md:flex sm:flex w-screen bg-[#000] fixed z-[100] text-white p-8 flex-row items-center justify-between">
-          <CanvasModel />
+      <div className=" fixed z-[100]">
+        <div className="xs:hidden bg-blend-color bg-no-repeat ss:hidden  sm:hidden absolute md:flex   md:left-[10px]    lg:left-[60px] xl:left-[20px] top-[20px] lg:top-[0px]  w-screen   z-[100] text-white md:p-8 lg:py-8 lg:px-12  flex-row items-center justify-between">
+          <img className="w-24 bg-blend-color bg-no-repeat" src={Logo} alt=''/>
+          
 
-          <div className="flex flex-row gap-4  sm:text-[1.7rem] md:text-3xl   items-center">
+          <div className="flex flex-row gap-4 lg:gap-8 relative md:-left-[100px] sm:text-[1.7rem] md:text-3xl lg:text-xl  items-center">
             <a
               className="cursor-pointer"
               onClick={() => scrollToSection("Hero")}
@@ -37,14 +38,28 @@ const Navbar = () => {
               Contact
             </a>
           </div>
+          <div className="w-[292.61px]   cursor-pointer  relative justify-start items-center gap-[25px] inline-flex">
+            <div className="px-4 py-2.5 bg-white rounded-md justify-center items-center gap-2.5 flex">
+              <div className="text-black text-sm font-semibold font-['Inter'] leading-[18px]">
+                Contact Now
+              </div>
+            </div>
+          </div>
         </div>
 
-        <div className="md:hidden sm:hidden w-screen fixed z-[100] bg-[#000]  text-white p-8 xs:flex xs:flex-row ss:flex ss:flex-row items-center justify-between">
+
+
+
+
+
+        
+
+        <div className="md:hidden sm:flex xs:text-4xl sm:text-5xl w-screen fixed z-[100] bg-[#000]  text-white p-8 xs:flex xs:flex-row ss:flex ss:flex-row items-center justify-between">
           {/* logo */}
           <div>AiRYY Rides</div>
           {/* menu */}
           <div className="">
-            <CiMenuBurger size={24} width={"20px"} />
+            <CiMenuBurger/>
           </div>
         </div>
       </div>

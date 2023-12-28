@@ -149,13 +149,15 @@
 			]
 		}
 	],
-	"materials":[
+	"materials": [
 		{
-			"doubleSided":true,
-			"name":"Colors",
+			"doubleSided": true,
+			"name": "Colors",
 			"pbrMetallicRoughness": {
-				
-			  }
+				"baseColorFactor": [
+					1, 0.8, 0.08235, 1.0 
+				]
+			}
 		}
 	],
 	"meshes":[
