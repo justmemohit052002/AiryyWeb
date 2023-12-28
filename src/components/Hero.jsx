@@ -16,15 +16,14 @@ const Hero = () => {
 
       <div className="absolute sm:hidden   left-[20px] sm:left-[55px]">
         <div className="relative z-10 top-[210px] ">
-
-          <motion.span className="text-yellow-500 xs:text-5xl ss:text-5xl  sm:text-6xl   font-medium font-['Fredoka'] uppercase leading-[48px] tracking-[2.88px]">
+          <motion.span className="text-yellow-500 xs:text-5xl ss:text-5xl  sm:text-6xl   font-medium font-poppins uppercase leading-[48px] tracking-[2.88px]">
             Great Rides
           </motion.span>
 
-          <motion.span className="text-yellow-400 text-opacity-80 xs:text-5xl ss:text-5xl  sm:text-6xl   font-medium font-['Fredoka'] uppercase leading-[48px] tracking-[2.88px]">
+          <motion.span className="text-yellow-400 text-opacity-80 xs:text-5xl ss:text-5xl  sm:text-6xl   font-medium font-poppins uppercase leading-[48px] tracking-[2.88px]">
             !<br />
           </motion.span>
-          <motion.span className="text-white xs:text-2xl ss:text-3xl sm:text-4xl  font-medium font-['Fredoka'] uppercase leading-[48px] tracking-widest">
+          <motion.span className="text-white xs:text-2xl ss:text-3xl sm:text-4xl  font-medium font-poppins uppercase leading-[48px] tracking-widest">
             Rent-Return-Repete
           </motion.span>
           <motion.span className="text-white text-[45px] font-medium font-['Fredoka'] capitalize leading-[48px] tracking-[5.40px]">
@@ -34,7 +33,7 @@ const Hero = () => {
 
         <div className=" max-w-1 cursor-pointer sm:hidden relative top-[240px] z-full  z-10">
           <div className="w-[145px] h-[38px] px-4 py-5 bg-white rounded-md justify-center items-center gap-3.5 inline-flex">
-            <div className="text-black text-sm font-semibold font-['Inter'] leading-[18px]">
+            <div className="text-black text-sm font-semibold font-poppins leading-[18px]">
               Contact Now
             </div>
           </div>
@@ -43,20 +42,23 @@ const Hero = () => {
 
       {/* Screen */}
       <div className=" xs:hidden ss:hidden h-[135px] left-[46px]  lg:left-[90px]  top-[344px] lg:top-[254px] z-20 absolute">
-        <div className="w-[483.30px] text-yellow-500 left-0 top-0 absolute text-[54px] font-medium font-['Fredoka'] uppercase tracking-[6.48px]">
+        <div className="w-[483.30px] text-yellow-500 left-0 top-0 absolute text-[54px] font-medium font-poppins uppercase tracking-[6.48px]">
           AiRYY Rides!
         </div>
-        <div className="w-[565px] left-0 top-[112px] absolute text-[37px] font-medium font-['Fredoka'] uppercase leading-[23px] tracking-[4.44px]">
+        <div className="w-[565px] left-0 top-[112px] absolute text-[37px] font-medium font-poppins uppercase leading-[23px] tracking-[4.44px]">
           Rent, Return, Repeat.
         </div>
       </div>
 
-      <div className="xs:hidden ss:hidden w-[595px] h-[49px] left-[46px]  md:left-[45px]  lg:left-[90px] top-[539px] lg:top-[439px] z-20 absolute text-white text-[19px] font-semibold font-['Inter'] leading-[18px]">
+      <div className="xs:hidden ss:hidden w-[595px] h-[49px] left-[46px]  md:left-[45px]  lg:left-[90px] top-[539px] lg:top-[439px] z-20 absolute text-white text-[19px] font-semibold font-poppins leading-[18px]">
         Your journey, your vehicle – experience travel like never before.
         <br />
       </div>
       <div className="xs:hidden cursor-pointer ss:hidden px-4 py-2.5  left-[46px]  md:left-[45px]  lg:left-[90px] top-[627px] lg:top-[527px] absolute z-20 rounded-[10px] border-2 border-yellow-500 justify-start items-start gap-2 inline-flex">
-        <a  onClick={() => scrollToSection("About")} className="text-yellow-400 text-[15px] font-semibold font-['Inter'] leading-[18px]">
+        <a
+          onClick={() => scrollToSection("About")}
+          className="text-yellow-400 text-[15px] font-semibold font-['Inter'] leading-[18px]"
+        >
           Learn More
         </a>
       </div>
@@ -82,7 +84,7 @@ const Hero = () => {
 
            <svg
            
-           className="absolute  xl:h-[900px] lg:h-[720px] lg:w-[1200px] xl:w-[1450px] " 
+           className="absolute  h-[900px] w-[1450px] " 
           width="316"
           height="269"
           viewBox="0 0 316 269"
@@ -112,7 +114,6 @@ const Hero = () => {
         </svg>
           </div>
         </div>
-       
       </div>
 
       {/* Screen Image */}

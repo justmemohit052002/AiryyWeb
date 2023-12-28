@@ -1,7 +1,7 @@
 import React, { useRef } from "react";
 import Slider from "react-slick";
 
-import BIke1 from "../assets/out-2.png"
+// import BIke1 from "../assets/out-2.png"
 import ActivaOne from "../assets/ActivaOne.png";
 import ActivaTwo from "../assets/ActivaTwo.png";
 import ActivaThree from "../assets/ActivaThree.png";
@@ -11,7 +11,7 @@ import ActivaFive from "../assets/ActivaFive.png";
 const ImageCarousel = () => {
   const sliderRef = useRef(null);
   const sliderImages = [
-    BIke1,
+    // BIke1,
     ActivaTwo,
      ActivaThree ,
     ActivaFour,
