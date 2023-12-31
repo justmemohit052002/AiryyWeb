@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react";
 
 const Contact = () => {
   return (
@@ -11,12 +11,6 @@ const Contact = () => {
           id="Ellipse"
           className="w-3/4 h-[1191px] bg-[linear-gradient(180deg,_#ffd600_0%,rgba(10,_10,_9,_0)_88%)] bg-cover bg-50%_50% bg-blend-normal bg-no-repeat absolute top-[-20px] left-[630px] flex flex-col gap-8 items-start pt-60 pb-[476px] px-[337px] rounded-[50%]"
         >
-          <img
-            src="https://file.rendit.io/n/FlkYTPPEkRwfLJ1MKSN4.png"
-            alt="Line"
-            id="Line"
-            className="w-5 h-0 origin-top-left rotate-[-41.19deg] absolute top-[500px] left-[1030.681640625px]"
-          />
           <div className="relative flex flex-col ml-24 gap-8 w-5/6 font-['Inter'] items-start">
             <div className="flex flex-col gap-5 w-full items-start">
               <div className="flex flex-row justify-between w-2/3 items-start">
@@ -28,25 +22,32 @@ const Contact = () => {
                 </div>
               </div>
               <div className="flex flex-row gap-12 w-full items-start">
-                <div className="bg-[#d9d9d9] mt-px w-2/5 h-16 rounded-lg" />
-                <img
-                  src="https://file.rendit.io/n/55wbrTvk0p9wjYdVeomm.svg"
-                  alt="Rectangle2"
+                <input
+                  type="text"
+                  className="bg-[#d9d9d9] mt-px w-2/5 h-16 rounded-lg"
+                  placeholder="Your Name"
+                />
+                <input
+                  type="email"
+                  className="bg-[#d9d9d9] mt-px w-2/5 h-16 rounded-lg"
+                  placeholder="Your Email"
                 />
               </div>
             </div>
             <div className="flex flex-col gap-6 w-full items-start">
-              <div id="Message" className="font-semibold leading-[16px] text-white">
-                Message{" "}
-              </div>
-              <div className="bg-[#d9d9d9] relative flex-row justify-center w-full h-48 rounded-lg">
-                <img
-                  src="https://file.rendit.io/n/KidhD4Dc8Iec8u5xtU2z.svg"
-                  alt="Line1"
-                  id="Line1"
-                  className="w-3 h-0 origin-top-left rotate-[-41.19deg] absolute top-48 left-[495.50390625px]"
-                />
-              </div>
+              <label
+                htmlFor="message"
+                className="font-semibold leading-[16px] text-white"
+              >
+                Message
+              </label>
+              <textarea
+                id="message"
+                name="message"
+                rows="4"
+                className="bg-[#d9d9d9] w-full h-48 rounded-lg resize-none"
+                placeholder="Your Message"
+              />
             </div>
           </div>
           <button
@@ -63,33 +64,26 @@ const Contact = () => {
           <div className="flex flex-col gap-5 w-3/5 items-start mb-1 ml-48">
             <div
               id="GetInTouch"
-              className="text-5xl font-['Franklin_Gothic_Demi'] tracking-[6.48] uppercase text-white ml-4"
+              className="text-5xl font-['Franklin_Gothic_Demi'] tracking-[6.48] uppercase text-white "
             >
               Get in Touch{" "}
             </div>
-            <div className="text-justify text-xl font-medium uppercase text-[#d3d0d0]">
-              Have questions or
-              {"  "}
-              need assistance?
-              {"  "}
-              We're
-              {"  "}
-              here to <br />
-              help.
-              {"  "}
-              Contact our friendly
-              {"  "}
-              team at
-              {"  "}
-              AiRYY Rides for <br />
-              any inquiries, support or partnership opportunities.
+            <div className="text-wrap w-full text-xl font-medium uppercase text-[#d3d0d0]">
+              Have questions or need assistance?We'rehere tohelp.Contact our
+              friendly team at AiRYY Rides for any inquiries, support or
+              partnership opportunities.
             </div>
           </div>
-          <img
-            src="https://file.rendit.io/n/mPsUgRQRQ5AnbXoiZvb4.png"
-            alt="Rectangle"
-            className="ml-48"
-          />
+
+          <iframe
+            className="w-96 ml-40 h-96 rounded-[2rem]"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3687.467957738305!2d75.86182427385859!3d22.687931523086643!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3962fd038adfe389%3A0x2aa0548bdd308fea!2sAiRYY%20Rides!5e0!3m2!1sen!2sin!4v1704033687769!5m2!1sen!2sin"
+         
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+
           <img
             src="https://file.rendit.io/n/CYL6aNzkpmmBpcEt2jeX.svg"
             alt="Group"
@@ -98,8 +92,7 @@ const Contact = () => {
         </div>
       </div>
     </div>
+  );
+};
 
-  )
-}
-
-export default Contact
+export default Contact;
