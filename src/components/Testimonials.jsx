@@ -148,25 +148,27 @@ const Testimonials = () => {
 
   return (
     <>
-      <div className="Testimonials h-screen w-screen flex flex-row justify-between items-center px-40">
-        <div className="absolute top-0 left-0 -z-1 w-full h-full">
+      <div className="Testimonials flex flex-row justify-between items-center px-40">
+        <div className="relative  top-0 left-60 right-0 -z-10 h-[400px] w-full">
           <svg
-            className=" "
-            viewBox="0 0 360 498"
+            className="absolute"
+            width="1132"
+            height="632"
+            viewBox="0 0 1422 832"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
           >
             <path
-              d="M526.831 158.736C568.898 321.254 392.396 473.378 305 496C217.604 518.622 -126.432 321.253 -168.499 158.736C-210.566 -3.78159 205.023 -71.9455 292.418 -94.5674C379.814 -117.189 484.764 -3.78154 526.831 158.736Z"
-              fill="url(#paint0_linear_143_585)"
+              d="M1703.06 203.649C1780.49 502.793 1664.93 791.459 1444.94 848.402C1224.95 905.345 82.0719 713.38 4.63986 414.236C-72.7922 115.091 944.542 -177.952 1164.53 -234.896C1384.52 -291.839 1625.63 -95.4956 1703.06 203.649Z"
+              fill="url(#paint0_linear_65_327)"
             />
             <defs>
               <linearGradient
-                id="paint0_linear_143_585"
-                x1="292.418"
-                y1="-94.5674"
-                x2="444.756"
-                y2="493.961"
+                id="paint0_linear_65_327"
+                x1="1164.53"
+                y1="-234.895"
+                x2="1444.94"
+                y2="848.402"
                 gradientUnits="userSpaceOnUse"
               >
                 <stop stop-color="#FFD600" />
@@ -177,13 +179,19 @@ const Testimonials = () => {
         </div>
 
         {/* text */}
-        <div className="flex justify-start md:w-[48rem] ">
-          <div className="h-[154.95px] w-10 text-white text-7xl flex-col font-semibold font-['Inter'] leading-none">
-            <span className="relative xl:-left-24 ">Testimonials</span>
-            <br />
-            <div className="w-[983.28px]  h-[25.31px] text-white sm:text-5xl lg:text-6xl font-medium font-['Inter'] leading-10">
-              What Our Riders Say
-              <div className="w-[88vw] xl:w-[85vw] bottom-4 relative text-white mt-10 text-[15px] sm:text-[25px] xl:text-[28px]  font-medium font-['Inter'] leading-none">
+        <div className="flex relative right-72 bottom-40 ">
+          <div className="text-white    font-poppins">
+            <div className="flex flex-col font-poppins">
+              <span className="xl:-left-24 text-[34px] font-poppins">
+                Testimonials
+              </span>
+              <span className="xl:-left-24  text-[32px] font-poppins">
+                What Our Riders Say.
+              </span>
+            </div>
+
+            <div className="w-[300px]  h-[25.31px] text-white sm:text-5xl lg:text-2xl  font-poppins">
+              <div className="text-white mt-8  sm:text-[25px] xl:text-[18px]   font-poppins leading-9 w-[250px] text-justify">
                 Don't just take our word for it hear from our satisfied riders
                 who have experienced the joy of AiRYY Rides.
               </div>
@@ -226,7 +234,7 @@ const Testimonials = () => {
             <button
               aria-label="Previous slide"
               id="keen-slider-previous-desktop"
-              className="rounded-full  border border-[#FB9039] p-3  text-[#FB9039] transition hover:bg-[#FB9039] hover:text-white dark:text-black"
+              className="rounded-full  border border-[#FFD600] p-3  text-[#FFD600] transition hover:bg-[#FFD600] hover:text-black dark:text-black"
               style={{
                 width: "52px",
                 height: "52px",
@@ -251,7 +259,7 @@ const Testimonials = () => {
             <button
               aria-label="Next slide"
               id="keen-slider-next-desktop"
-              className="rounded-full border border-[#FB9039] p-3  text-[#FB9039] transition hover:bg-[#FB9039] hover:text-white dark:text-black"
+              className="rounded-full border border-[#FFD600] p-3  text-[#FFD600] transition hover:bg-[#FFD600] hover:text-black dark:text-black"
               style={{
                 width: "52px",
                 height: "52px",
