@@ -64,7 +64,7 @@ const Hero = () => {
       </div>
 
       {/* Image and gradient background */}
-      <div className="xs:left-[35vw] ss:left-[43vw] sm:left-[20vw] lg:-left-[8vw]  xl:-bottom-[30vh]  -bottom-[60vh]   relative  sm:-bottom-[48vh] lg:-bottom-[40vh]  xl:left-[20vw]">
+      <div className="xs:left-[25vw] ss:left-[20vw] sm:left-[20vw]  lg:left-[25vw]  xl:-bottom-[20vh]  -bottom-[60vh] ss:-bottom-[50vh]   relative  sm:-bottom-[48vh] lg:-bottom-[40vh]  xl:left-[30vw]">
         {/* <img
           className="xs:w-[22rem] xs:h-[20rem] ss:w-[22rem] ss:h-[20rem]  sm:w-[1115px] sm:h-[785px]  lg:w-[615px] lg:h-[485px]   z-10" // Increased z-index for the image
           alt="Activas"
@@ -72,44 +72,46 @@ const Hero = () => {
           style={{ borderRadius: 9999, position: "absolute" }}
         /> */}
         <ImageCarousel />
-
-        <div className=" absolute xs:-left-[45vw] xs:-top-[20vh] ss:-left-[45vw] ss:-top-[18vh]  sm:left-[10vw] sm:-top-[15vh] xl:-top-[25ch]  -z-10">
+       
+        <div className=" absolute  lg:top-8 lg:-left-[25vw]  xl:left-[10vw]   xs:-left-[35vw] xs:-top-[20vh] ss:-left-[20vw] ss:-top-[18vh]  sm:-left-[20vw] sm:-top-[15vh] xl:-top-[25ch]  -z-10">
           <div
-            className="absolute h-[1000px] xl:h-[1300px] w-[1450px]  sm:h-[130rem] sm:w-[205rem] bg-gradient-to-b from-yellow-400 via-transparent to-transparent rounded-[743.5px/595.5px]"
+            className="absolute h-[1000px] xl:h-[1400px] lg:h-[1600px] w-[1450px]  sm:h-[130rem] sm:w-[205rem] bg-gradient-to-b from-yellow-400 via-transparent to-transparent rounded-[743.5px/595.5px]"
             style={{
               position: "relative",
             }}
           />
-          <div className=" absolute  z-100 top-0 bottom-0 -left-20">
-            <svg
-              className="absolute  h-[900px] w-[1450px] "
-              width="316"
-              height="269"
-              viewBox="0 0 316 269"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
+          <div className=" absolute  z-100 top-0 bottom-0 -left-20  xs:-left-48" >
+
+           <svg
+           
+           className="absolute  h-[900px] w-[1450px] " 
+          width="316"
+          height="269"
+          viewBox="0 0 316 269"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <ellipse
+            cx="228.5"
+            cy="183"
+            rx="228.5"
+            ry="183"
+            fill="url(#paint0_linear_85_169)"
+          />
+          <defs>
+            <linearGradient
+              id="paint0_linear_85_169"
+              x1="91.2817"
+              y1="303.56"
+              x2="387.491"
+              y2="188.619"
+              gradientUnits="userSpaceOnUse"
             >
-              <ellipse
-                cx="228.5"
-                cy="183"
-                rx="228.5"
-                ry="183"
-                fill="url(#paint0_linear_85_169)"
-              />
-              <defs>
-                <linearGradient
-                  id="paint0_linear_85_169"
-                  x1="91.2817"
-                  y1="303.56"
-                  x2="387.491"
-                  y2="188.619"
-                  gradientUnits="userSpaceOnUse"
-                >
-                  <stop stop-color="#11100F" stop-opacity="0.3" />
-                  <stop offset="1" stop-color="#EEC800" stop-opacity="0" />
-                </linearGradient>
-              </defs>
-            </svg>
+              <stop stop-color="#11100F" stop-opacity="0.3" />
+              <stop offset="1" stop-color="#EEC800" stop-opacity="0" />
+            </linearGradient>
+          </defs>
+        </svg>
           </div>
         </div>
       </div>
