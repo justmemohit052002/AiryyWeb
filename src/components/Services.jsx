@@ -1,5 +1,5 @@
 import React from 'react'
-import Fade from 'react-reveal/Fade';
+import Fade from 'react-reveal/Fade'; 
 import S1 from '../assets/S1.png';
 import S2 from '../assets/S2.png';
 import S3 from '../assets/S3.png';
