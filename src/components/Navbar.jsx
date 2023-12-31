@@ -54,9 +54,9 @@ const Navbar = () => {
 
         
 
-        <div className="md:hidden sm:flex xs:text-4xl ss:text-4xl sm:text-5xl w-screen fixed z-[100] bg-[#000]  text-white p-8 xs:flex xs:flex-row ss:flex ss:flex-row items-center justify-between">
+        <div className="md:hidden sm:flex xs:text-4xl ss:text-4xl sm:text-5xl w-screen fixed z-[100]   text-white p-8 xs:flex xs:flex-row ss:flex ss:flex-row items-center justify-between">
           {/* logo */}
-          <img className="w-24 bg-blend-color bg-no-repeat" src={Logo} alt=''/>
+          <img className="w-20 bg-blend-color bg-no-repeat" src={Logo} alt=''/>
           {/* menu */}
           <div className="">
             <CiMenuBurger />
