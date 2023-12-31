@@ -19,7 +19,7 @@ const BlockquoteComponent = ({ monial, index }) => {
         {/* Image */}
         <img
           className="w-[64.13px] h-[70.24px] rounded-full"
-          src="https://via.placeholder.com/54x70"
+          src={monial.image}
         />
         {/* name */}
         <div className="mb-28 sm:ml-2">{monial.name}</div>

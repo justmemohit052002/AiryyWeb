@@ -49,7 +49,7 @@ const ImageCarousel = () => {
             
               key={index}
               src={image}
-              alt={Slide ${index + 1}}
+              alt={`Slide ${index + 1}`}
               
             />
           ))}
