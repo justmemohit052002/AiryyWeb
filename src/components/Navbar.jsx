@@ -18,29 +18,29 @@ const Navbar = () => {
           <img className="w-24 bg-blend-color bg-no-repeat" src={Logo} alt=''/>
           
 
-          <div className="flex flex-row gap-4 lg:gap-8 relative md:-left-[100px] sm:text-[1.7rem] md:text-3xl lg:text-xl  items-center">
+          <div className="flex flex-row gap-4 lg:gap-8 relative md:left-[8rem] sm:text-[1.7rem] md:text-3xl lg:text-xl  items-center">
             <a
-              className="cursor-pointer"
+              className="cursor-pointer font-poppins"
               onClick={() => scrollToSection("Hero")}
             >
               Home
             </a>
             <a
-              className="cursor-pointer"
+              className="cursor-pointer font-poppins"
               onClick={() => scrollToSection("About")}
             >
               About
             </a>
             <a
-              className="cursor-pointer"
+              className="cursor-pointer font-poppins"
               onClick={() => scrollToSection("Contact")}
             >
               Contact
             </a>
           </div>
-          <div className="w-[292.61px]   cursor-pointer  relative justify-start items-center gap-[25px] inline-flex">
+          <div className="w-[292.61px]  md:left-[10rem] lg:left-[8rem] cursor-pointer  relative justify-start items-center gap-[25px] inline-flex">
             <div className="px-4 py-2.5 bg-white rounded-md justify-center items-center gap-2.5 flex">
-              <div className="text-black text-sm font-semibold font-['Inter'] leading-[18px]">
+              <div className="text-black text-sm font-semibold font-poppins leading-[18px]">
                 Contact Now
               </div>
             </div>
@@ -54,46 +54,43 @@ const Navbar = () => {
 
         
 
-        <div className="md:hidden sm:flex xs:text-4xl sm:text-5xl w-screen fixed z-[100] bg-[#000]  text-white p-8 xs:flex xs:flex-row ss:flex ss:flex-row items-center justify-between">
+        <div className="md:hidden sm:flex xs:text-4xl ss:text-4xl sm:text-5xl w-screen fixed z-[100]   text-white p-8 xs:flex xs:flex-row ss:flex ss:flex-row items-center justify-between">
           {/* logo */}
-          <div>AiRYY Rides</div>
+          <img className="w-20 bg-blend-color bg-no-repeat" src={Logo} alt=''/>
           {/* menu */}
           <div className="">
-            <CiMenuBurger/>
+            <CiMenuBurger />
           </div>
         </div>
       </div>
 
-      
-      
-      
       <div className="xs:hidden ss:hidden sm:hidden  xl:hidden">
-      <div className="w-[1487px] h-[1191px] left-[281px] top-[153px] absolute bg-gradient-to-b from-yellow-400 via-neutral-950 to-transparent rounded-full" />
+        <div className="w-[1487px] h-[1191px] left-[281px] top-[153px] absolute bg-gradient-to-b from-yellow-400 via-neutral-950 to-transparent rounded-full" />
 
-      <div className="w-[872px] h-9 left-[76px] top-[55px] absolute justify-between items-center inline-flex">
-        <div className="w-24 h-[44px] justify-center items-center flex">
-        AiRYY Rides
-        </div>
-        
-        <div className="justify-start items-center gap-[45px] flex">
-          <div className="text-white text-base font-medium font-['Inter'] leading-none">
-            Home
+        <div className="w-[872px] h-9 left-[76px] top-[55px] absolute justify-between items-center inline-flex">
+          <div className="w-24 h-[44px] justify-center items-center flex">
+            AiRYY Rides
           </div>
-          <div className="text-white text-base font-medium font-['Inter'] leading-none">
-            About
+
+          <div className="justify-start items-center gap-[45px] flex">
+            <div className="text-white text-base font-medium font-['Inter'] leading-none">
+              Home
+            </div>
+            <div className="text-white text-base font-medium font-['Inter'] leading-none">
+              About
+            </div>
+            <div className="text-white text-base font-medium font-['Inter'] leading-none">
+              Contact
+            </div>
           </div>
-          <div className="text-white text-base font-medium font-['Inter'] leading-none">
-            Contact
-          </div>
-        </div>
-        <div className="justify-start items-center gap-[25px] flex">
-          <div className="px-4 py-2.5 bg-white rounded-md justify-center items-center gap-2.5 flex">
-            <div className="text-black text-sm font-semibold font-['Inter'] leading-[18px]">
-              Contact Now
+          <div className="justify-start items-center gap-[25px] flex">
+            <div className="px-4 py-2.5 bg-white rounded-md justify-center items-center gap-2.5 flex">
+              <div className="text-black text-sm font-semibold font-['Inter'] leading-[18px]">
+                Contact Now
+              </div>
             </div>
           </div>
         </div>
-      </div>
       </div>
     </>
   );

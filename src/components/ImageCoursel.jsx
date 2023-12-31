@@ -1,7 +1,7 @@
 import React, { useRef } from "react";
 import Slider from "react-slick";
 
-import BIke1 from "../assets/out-2.png"
+// import BIke1 from "../assets/out-2.png"
 import ActivaOne from "../assets/ActivaOne.png";
 import ActivaTwo from "../assets/ActivaTwo.png";
 import ActivaThree from "../assets/ActivaThree.png";
@@ -11,7 +11,7 @@ import ActivaFive from "../assets/ActivaFive.png";
 const ImageCarousel = () => {
   const sliderRef = useRef(null);
   const sliderImages = [
-    BIke1,
+    // BIke1,
     ActivaTwo,
      ActivaThree ,
     ActivaFour,
@@ -41,7 +41,7 @@ const ImageCarousel = () => {
   return (
     <div className="flex flex-row items-center justify-evenly">
       
-      <div className="xs:w-[22rem] xs:h-[20rem] ss:w-[22rem] ss:h-[20rem]  sm:w-[1115px] sm:h-[785px]  lg:w-[615px] lg:h-[485px]   z-10" >
+      <div className="xs:w-[22rem] xs:h-[20rem] ss:w-[30rem] ss:h-[30rem]  sm:w-[815px] sm:h-[285px] xl:w-[815px] xl:h-[285px]  lg:w-[915px] lg:h-[485px]   z-10" >
         <Slider ref={sliderRef} {...settings}>
           {sliderImages.map((image, index) => (
 
