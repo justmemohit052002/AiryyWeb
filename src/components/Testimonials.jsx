@@ -19,7 +19,7 @@ const BlockquoteComponent = ({ monial, index }) => {
         {/* Image */}
         <img
           className="w-[64.13px] h-[70.24px] rounded-full"
-          src="https://via.placeholder.com/54x70"
+          src={monial.image}
         />
         {/* name */}
         <div className="mb-28 sm:ml-2">{monial.name}</div>
@@ -148,7 +148,7 @@ const Testimonials = () => {
 
   return (
     <>
-      <div className="Testimonials flex flex-row justify-between items-center px-40">
+      <div className="Testimonials flex flex-row justify-between items-center px-40 py-40">
         <div className="relative  top-0 left-60 right-0 -z-10 h-[400px] w-full">
           <svg
             className="absolute"
