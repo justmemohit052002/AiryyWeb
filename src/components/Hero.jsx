@@ -41,7 +41,7 @@ const Hero = () => {
       </div>
 
       {/* Screen */}
-      <div className=" xs:hidden ss:hidden h-[135px] left-[46px]  lg:left-[90px]  top-[344px] lg:top-[254px] z-20 absolute">
+      <div className=" xs:hidden ss:hidden h-[135px] left-[46px]  lg:left-[90px]  top-[344px] lg:top-[154px] z-20 absolute">
         <div className="w-[483.30px] text-yellow-500 left-0 top-0 absolute text-[54px] font-medium font-poppins uppercase tracking-[6.48px]">
           AiRYY Rides!
         </div>
@@ -50,11 +50,11 @@ const Hero = () => {
         </div>
       </div>
 
-      <div className="xs:hidden ss:hidden w-[595px] h-[49px] left-[46px]  md:left-[45px]  lg:left-[90px] top-[539px] lg:top-[439px] z-20 absolute text-white text-[19px] font-semibold font-poppins leading-[18px]">
+      <div className="xs:hidden ss:hidden w-[595px] h-[49px] left-[46px]  md:left-[45px]  lg:left-[90px] top-[539px] lg:top-[339px] z-20 absolute text-white text-[19px] font-semibold font-poppins leading-[18px]">
         Your journey, your vehicle – experience travel like never before.
         <br />
       </div>
-      <div className="xs:hidden cursor-pointer ss:hidden px-4 py-2.5  left-[46px]  md:left-[45px]  lg:left-[90px] top-[627px] lg:top-[527px] absolute z-20 rounded-[10px] border-2 border-yellow-500 justify-start items-start gap-2 inline-flex">
+      <div className="xs:hidden cursor-pointer ss:hidden px-4 py-2.5  left-[46px]  md:left-[45px]  lg:left-[90px] top-[627px] lg:top-[427px] absolute z-20 rounded-[10px] border-2 border-yellow-500 justify-start items-start gap-2 inline-flex">
         <a
           onClick={() => scrollToSection("About")}
           className="text-yellow-400 text-[15px] font-semibold font-['Inter'] leading-[18px]"
