@@ -17,13 +17,13 @@ const App = () => {
 
   return (
     <div>
-
       <Navbar />
       <Hero />
       <Services />
+      <Bikes />
       <Testimonials />
       <About />
-      <Bikes />
+
       <Contact />
       <Footer />
     </div>

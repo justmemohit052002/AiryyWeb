@@ -148,7 +148,7 @@ const Testimonials = () => {
 
   return (
     <>
-      <div className="Testimonials flex flex-row justify-between items-center px-40">
+      <div className="Testimonials flex flex-row justify-between items-center px-40 py-40">
         <div className="relative  top-0 left-60 right-0 -z-10 h-[400px] w-full">
           <svg
             className="absolute"

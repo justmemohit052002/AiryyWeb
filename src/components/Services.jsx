@@ -5,7 +5,7 @@ import S2 from '../assets/S2.png';
 import S3 from '../assets/S3.png';
 const Services = () => {
   return (
-    <div className="Services h-screen mt-20 relative xs:w-full">
+    <div className="Services h-screen mt-20 relative  xs:w-full">
       {/* Parent container with opacity */}
       <div className="w-full h-[450px] bg-gradient-to-t opacity-20 from-black via-yellow-400 to-yellow-400 rounded-3xl flex items-center justify-right absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
         {/* This container has opacity, and the heading is outside it */}
