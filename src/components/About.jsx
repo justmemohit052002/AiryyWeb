@@ -3,10 +3,10 @@ import Fade from "react-reveal/Fade";
 
 const About = () => {
   return (
-    <div id="NewRootRoot" className="flex flex-row w-full items-start">
+    <div id="NewRootRoot" className="flex flex-row w-full  snap-center  items-start">
       <div
         id="About"
-        className="overflow-hidden bg-black relative flex flex-row w-full font-['Inter'] items-start pt-[213px] px-[209px]"
+        className="overflow-hidden bg-black     relative flex flex-row w-full font-['Inter'] items-start pt-[213px] px-[209px]"
       >
         <div
           id="Ellipse"

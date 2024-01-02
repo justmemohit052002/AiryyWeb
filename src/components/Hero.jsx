@@ -4,14 +4,15 @@ import ImageCarousel from "./ImageCoursel";
 import { frame, motion } from "framer-motion";
 
 const Hero = () => {
-  const scrollToSection = (sectionId) => {
-    const section = document.getElementById(sectionId);
-    if (section) {
-      section.scrollIntoView({ behavior: "smooth" });
-    }
+
+  const whatsappNumber = "8109475317"; // Replace with your actual WhatsApp number
+
+  const handleRentNowClick = () => {
+    const whatsappLink = `https://wa.me/${whatsappNumber}`;
+    window.location.href = whatsappLink;
   };
   return (
-    <div id="Hero" className="h-screen relative">
+    <div id="Hero" className="h-screen  relative">
       {/* Mobile */}
 
       <div className="absolute sm:hidden   left-[20px] sm:left-[55px]">
@@ -56,10 +57,10 @@ const Hero = () => {
       </div>
       <div className="xs:hidden cursor-pointer ss:hidden px-4 py-2.5  left-[46px]  md:left-[45px]  lg:left-[90px] top-[627px] lg:top-[427px] absolute z-20 rounded-[10px] border-2 border-yellow-500 justify-start items-start gap-2 inline-flex">
         <a
-          onClick={() => scrollToSection("About")}
+          onClick={handleRentNowClick}
           className="text-yellow-400 text-[15px] font-semibold font-['Inter'] leading-[18px]"
         >
-          Learn More
+          Rent Now
         </a>
       </div>
 

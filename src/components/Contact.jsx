@@ -1,8 +1,10 @@
 import React from "react";
-
+import { CiFacebook } from "react-icons/ci";
+import { FaInstagram } from "react-icons/fa6";
+import { RiTwitterXLine } from "react-icons/ri";
 const Contact = () => {
   return (
-    <div id='Contact' className="flex flex-row w-full items-start">
+    <div id="Contact" className="flex snap-center   flex-row w-full items-start">
       <div
         id="Desktop"
         className="overflow-hidden bg-black relative flex flex-row w-full font-poppins items-start"
@@ -76,18 +78,18 @@ const Contact = () => {
           </div>
 
           <iframe
-            className="w-96 ml-40 h-96 rounded-[2rem]"
+            className="w-96 ml-48 h-96 rounded-[2rem]"
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3687.467957738305!2d75.86182427385859!3d22.687931523086643!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3962fd038adfe389%3A0x2aa0548bdd308fea!2sAiRYY%20Rides!5e0!3m2!1sen!2sin!4v1704033687769!5m2!1sen!2sin"
             allowfullscreen=""
             loading="lazy"
             referrerpolicy="no-referrer-when-downgrade"
           ></iframe>
 
-          <img
-            src="https://file.rendit.io/n/CYL6aNzkpmmBpcEt2jeX.svg"
-            alt="Group"
-            className="ml-[203px]"
-          />
+          <div className="flex ml-52 flex-row gap-3 ">
+            <CiFacebook className="cursor-pointer"  size={28} />
+            <RiTwitterXLine className="cursor-pointer" size={28} />
+            <FaInstagram className="cursor-pointer" size={28} />
+          </div>
         </div>
       </div>
     </div>
@@ -95,3 +97,4 @@ const Contact = () => {
 };
 
 export default Contact;
+

@@ -1,26 +1,35 @@
 import React from "react";
 import FooterImg from "../assets/FooterImg6.png";
 import Zoom from "react-reveal/Zoom";
-import PhoneInTalkIcon from "@mui/icons-material/PhoneInTalk";
 import PhoneInTalkOutlinedIcon from "@mui/icons-material/PhoneInTalkOutlined";
-import AttachEmailIcon from "@mui/icons-material/AttachEmail";
 import AttachEmailOutlinedIcon from "@mui/icons-material/AttachEmailOutlined";
 import PlaceOutlinedIcon from "@mui/icons-material/PlaceOutlined";
-import Twitter from '../assets/Twitter.png'
-import Insta from '../assets/Insta.png'
-import Fb from '../assets/Fb.png'
+import { CiFacebook } from "react-icons/ci";
+import { FaInstagram } from "react-icons/fa6";
+import { RiTwitterXLine } from "react-icons/ri";
+import Logo from "../assets/airryLogo.webp";
 function Footer() {
   const gradientStyle = {
     background: "linear-gradient(to bottom, black, #1d1b1c)",
   };
 
   return (
-    <div className="w-full h-3/6" style={gradientStyle}>
-      <div className="ss:flex-col xs:flex-col flex flex-row items-center justify-around px-5">
+    <div id="Footer" className="w-full snap-center   h-3/6" style={gradientStyle}>
+      <div className="ss:flex-col xs:flex-col flex flex-row items-center justify-around px-14">
         <div className="xs:flex xs:flex-col xs:justify-center xs:items-center">
-          <h2 className="text-gray-300 font-poppins xs:text-[18px] font-medium">
-            ARYY RIDES
-          </h2>
+        
+              <div className="flex-auto">
+                <a
+                  className="cursor-pointer outline-none transition duration-150 ease-in-out focus-visible:ring-2 focus-visible:ring-slate-7"
+                  onClick={() => scrollToSection("Hero")}
+                >
+                  <img
+                    className="w-44 bg-blend-color bg-no-repeat"
+                    src={Logo}
+                    alt=""
+                  />
+                </a>
+              </div>
           <h2 className="text-gray-300 font-poppins mt-1  xs:text-[18px] text-[20px] font-medium">
             Rent it now!
           </h2>
@@ -40,7 +49,7 @@ function Footer() {
       </div>
       <div className="flex flex-row ss:ml-0 ss:px-4 xs:justify-between xs:ml-0 xs:px-8 xs:py-3 justify-around items-center ml-20 py-6">
         <div>
-          <h1 className="text-bold font-poppins ss:text-[18px] xs:text-[18px] text-[25px] border-yellow-200">
+          <h1 className="text-bold font-poppins pb-2 ss:text-[18px] xs:text-[18px] text-[25px] border-yellow-200">
             Contact US
           </h1>
           <ul>
@@ -57,40 +66,14 @@ function Footer() {
               452001
             </li>
           </ul>
-          <div className="flex flex-row  py-4">
-            <span>
-              <img
-                src={Insta}
-                alt="img Instagram"
-                height={30}
-                width={30}
-                className="cursor-pointer"
-              />
-            </span>
-            <span>
-              {" "}
-              <img
-                src={Twitter}
-                alt="img Twitter"
-                height={30}
-                width={30}
-                className="cursor-pointer"
-              />
-            </span>
-            <span>
-              {" "}
-              <img
-                src={Fb}
-                alt="img Facebook"
-                height={30}
-                width={30}
-                className="cursor-pointer"
-              />
-            </span>
+          <div className="flex flex-row gap-4 h-[5rem]  py-4">
+          <CiFacebook size={28}/>
+            <RiTwitterXLine className="cursor-pointer" size={28} />
+            <FaInstagram className="cursor-pointer" size={28} />
           </div>
         </div>
         <div>
-          <h1 className=" ss:text-[14px] text-bold font-poppins   xs:text-[15px] text-[25px]">
+          <h1 className=" ss:text-[14px] text-bold font-poppins pb-2  xs:text-[15px] text-[25px]">
             useful Links
           </h1>
           <ul>
@@ -100,7 +83,7 @@ function Footer() {
             <li className="hover:underline cursor-pointer xs:text-[13px]">
               Terms and Conditions
             </li>
-            <li className="hover:underline cursor-pointer xs:text-[13px]">
+            <li className="hover:underline pb-24 cursor-pointer xs:text-[13px]">
               Fee Policy
             </li>
           </ul>

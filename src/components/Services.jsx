@@ -5,9 +5,9 @@ import S2 from '../assets/S2.png';
 import S3 from '../assets/S3.png';
 const Services = () => {
   return (
-    <div id='Services' className="Services h-screen mt-20 relative xs:w-full">
+    <div id='Services' className="Services snap-center   h-screen mt-20 relative xs:w-full">
       {/* Parent container with opacity */}
-      <div className="w-full h-[450px] bg-gradient-to-t opacity-20 from-black via-yellow-400 to-yellow-400 rounded-3xl flex items-center justify-right absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+      <div className="w-full h-[750px] -z-[1000] bg-gradient-to-b  from-yellow-400 via-transparent to-transparent rounded-3xl flex items-center justify-right absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
         {/* This container has opacity, and the heading is outside it */}
       </div>
 
@@ -18,7 +18,7 @@ const Services = () => {
       <Fade top>
         <div className="flex flex-row gap-10 items-center justify-center mt-16 xs:overflow-x-auto ss:overflow-x-auto xs:w-full">
           {/* Box 1 */}
-          <div className="group xs:snap-center xs:w-[50px] xs:h-[70px] w-[250px] h-[327px]  px-[35px] py-[95px] bg-slate-50 hover:bg-gradient-to-t from-black to-amber-400 rounded-[30px] shadow flex-col justify-center items-center inline-flex transition-all duration-500">
+          <div className="group xs:snap-center  snap-mandatoryxs:w-[50px] xs:h-[70px] w-[250px] h-[327px]  px-[35px] py-[95px] bg-slate-50 hover:bg-gradient-to-t from-black to-yellow-400 rounded-[30px] shadow flex-col justify-center items-center inline-flex transition-all duration-500">
             <div className="flex-col justify-center items-center gap-[35px] flex">
               <div className="self-stretch font-poppins text-center text-black text-[20px] font-bold">
                 24/7 Service
@@ -38,7 +38,7 @@ const Services = () => {
           </div>
 
           {/* Box 2 */}
-          <div className="group xs:snap-center xs:w-[200px] xs:h-[270px] w-[250px] h-[327px] flex-col justify-center items-center gap-[25px] inline-flex bg-slate-50 hover:bg-gradient-to-t from-black to-amber-400 rounded-[30px] transition-all duration-500">
+          <div className="group xs:snap-center  snap-mandatoryxs:w-[200px] xs:h-[270px] w-[250px] h-[327px] flex-col justify-center items-center gap-[25px] inline-flex bg-slate-50 hover:bg-gradient-to-t from-black to-yellow-400 rounded-[30px] transition-all duration-500">
             <img className="xs:w-12 xs:h-12 w-20 h-20" src={S1} />
             <div className="text-neutral-700 group-hover:text-black text-[20px] font-bold font-poppins">
               Budget-Friendly
@@ -58,7 +58,7 @@ const Services = () => {
           </div>
 
           {/* Box 3 */}
-          <div className="group xs:snap-center xs:w-[200px] xs:h-[270px] w-[250px] h-[327px] flex-col justify-center items-center gap-[25px] inline-flex bg-slate-50 hover:bg-gradient-to-t from-black to-amber-400 rounded-[30px] transition-all duration-500">
+          <div className="group xs:snap-center  snap-mandatoryxs:w-[200px] xs:h-[270px] w-[250px] h-[327px] flex-col justify-center items-center gap-[25px] inline-flex bg-slate-50 hover:bg-gradient-to-t from-black to-yellow-400 rounded-[30px] transition-all duration-500">
             <img className="xs:w-12 xs:h-12 w-20 h-20" src={S2} />
             <div className="text-neutral-700 group-hover:text-black text-[20px] font-bold font-poppins">
               Quality and Safety
@@ -77,7 +77,7 @@ const Services = () => {
           </div>
 
           {/* Box 4 */}
-          <div className="group xs:snap-center xs:w-[200px] xs:h-[270px] w-[250px] h-[327px] flex-col justify-center items-center gap-[25px] inline-flex bg-slate-50 hover:bg-gradient-to-t from-black to-amber-400 rounded-[30px] transition-all duration-500">
+          <div className="group xs:snap-center  snap-mandatoryxs:w-[200px] xs:h-[270px] w-[250px] h-[327px] flex-col justify-center items-center gap-[25px] inline-flex bg-slate-50 hover:bg-gradient-to-t from-black to-yellow-400 rounded-[30px] transition-all duration-500">
             <img className="xs:w-12 xs:h-12 w-20 h-20" src={S3} />
             <div className="text-neutral-700 group-hover:text-black text-[20px] font-bold font-poppins">
               Easy Booking

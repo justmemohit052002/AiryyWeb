@@ -6,9 +6,9 @@ import b4 from '../assets/BikeImg4.png'
 import b5 from '../assets/BikeImg5.png'
 const Bikes = () => {
   return (
-    <div>
-     <h1 className="text-center font-poppins text-[25px] mb-20 font-extrabold ">Bikes Information</h1>
-      <div className="flex  justify-center items-center h-[200px] mb-40 flex-row gap-8">
+    <div id="Bikes" className="snap-center  ">
+     <h1 className="text-center font-poppins text-[25px] mb-20 font-extrabold pb-14">Bikes Information</h1>
+      <div className="flex  justify-center items-center h-[200px] mb-44 flex-row gap-8">
         {/* Card 1 */}
 
         <div className="flex flex-col justify-center items-center bg-gradient-to-b from-yellow-400 to-black h-[200px] w-[250px] rounded-lg p-4">
