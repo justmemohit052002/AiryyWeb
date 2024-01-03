@@ -7,14 +7,12 @@ import PlaceOutlinedIcon from "@mui/icons-material/PlaceOutlined";
 import { CiFacebook } from "react-icons/ci";
 import { FaInstagram } from "react-icons/fa6";
 import { RiTwitterXLine } from "react-icons/ri";
-import Logo from "../assets/airryLogo.webp";
+import Logo from "../assets/logowhite.jpg";
 function Footer() {
-  const gradientStyle = {
-    background: "linear-gradient(to bottom, black, #1d1b1c)",
-  };
+
 
   return (
-    <div id="Footer" className="w-full snap-center   h-3/6" style={gradientStyle}>
+    <div id="Footer" className="w-full snap-center   h-3/6" >
       <div className="ss:flex-col xs:flex-col flex flex-row items-center justify-around px-14">
         <div className="xs:flex xs:flex-col xs:justify-center xs:items-center">
         
@@ -24,16 +22,16 @@ function Footer() {
                   onClick={() => scrollToSection("Hero")}
                 >
                   <img
-                    className="w-44 bg-blend-color bg-no-repeat"
+                    className="w-44 bg-blend-color   bg-no-repeat"
                     src={Logo}
                     alt=""
                   />
                 </a>
               </div>
-          <h2 className="text-gray-300 font-poppins mt-1  xs:text-[18px] text-[20px] font-medium">
+          <h2 className="dark:text-gray-300 font-poppins mt-1  xs:text-[18px] text-[20px] font-medium">
             Rent it now!
           </h2>
-          <p className="text-gray-300  ss:text-[20px] ss:text-center  font-poppins mt-1 xs:hidden xs:text-[18px] text-[25px]">
+          <p className="dark:text-gray-300  ss:text-[20px] ss:text-center  font-poppins mt-1 xs:hidden xs:text-[18px] text-[25px]">
             Explore the city with ease. Rent a bike today!
           </p>
         </div>
@@ -53,26 +51,26 @@ function Footer() {
             Contact US
           </h1>
           <ul>
-            <li>
+            <li className="dark:text-white">
               <PhoneInTalkOutlinedIcon className="text-yellow-400" /> 9826977757
             </li>
-            <li>
+            <li className="dark:text-white">
               <AttachEmailOutlinedIcon className="text-yellow-400" />{" "}
               airyyrides@gmail.com
             </li>
-            <li className="">
+            <li className="dark:text-white">
               <PlaceOutlinedIcon className="text-yellow-400" /> 160/4, Bholaram
               Ustad Marg, Indrapuri Colony, Bhanwar Kuwa, Indore, Madhya Pradesh
               452001
             </li>
           </ul>
-          <div className="flex flex-row gap-4 h-[5rem]  py-4">
+          <div className="flex dark:text-white flex-row gap-4 h-[5rem]  py-4">
           <CiFacebook size={28}/>
             <RiTwitterXLine className="cursor-pointer" size={28} />
             <FaInstagram className="cursor-pointer" size={28} />
           </div>
         </div>
-        <div>
+        <div className="dark:text-white">
           <h1 className=" ss:text-[14px] text-bold font-poppins pb-2  xs:text-[15px] text-[25px]">
             useful Links
           </h1>

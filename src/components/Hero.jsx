@@ -12,7 +12,7 @@ const Hero = () => {
     window.location.href = whatsappLink;
   };
   return (
-    <div id="Hero" className="h-screen  relative">
+    <div id="Hero" className="h-screen relative">
       {/* Mobile */}
 
       <div className="absolute sm:hidden   left-[20px] sm:left-[55px]">
@@ -35,7 +35,7 @@ const Hero = () => {
         <div className=" max-w-1 cursor-pointer sm:hidden relative top-[240px] z-full  z-10">
           <div className="w-[145px] h-[38px] px-4 py-5 bg-white rounded-md justify-center items-center gap-3.5 inline-flex">
             <div className="text-black text-sm font-semibold font-poppins leading-[18px]">
-              Contact Now
+              Contact Now 
             </div>
           </div>
         </div>
@@ -46,12 +46,12 @@ const Hero = () => {
         <div className="w-[483.30px] text-yellow-500 left-0 top-0 absolute text-[54px] font-medium font-poppins uppercase tracking-[6.48px]">
           AiRYY Rides!
         </div>
-        <div className="w-[565px] left-0 top-[112px] absolute text-[37px] font-medium font-poppins uppercase leading-[23px] tracking-[4.44px]">
+        <div className="w-[565px] dark:text-white left-0 top-[112px] absolute text-[37px] font-medium font-poppins uppercase leading-[23px] tracking-[4.44px]">
           Rent, Return, Repeat.
         </div>
       </div>
 
-      <div className="xs:hidden ss:hidden w-[595px] h-[49px] left-[46px]  md:left-[45px]  lg:left-[90px] top-[539px] lg:top-[339px] z-20 absolute text-white text-[19px] font-semibold font-poppins leading-[18px]">
+      <div className="xs:hidden ss:hidden w-[595px] h-[49px] left-[46px]  md:left-[45px]  lg:left-[90px] top-[539px] lg:top-[339px] z-20 absolute dark:text-white text-[19px] font-semibold font-poppins leading-[18px]">
         Your journey, your vehicle – experience travel like never before.
         <br />
       </div>
@@ -74,7 +74,7 @@ const Hero = () => {
         /> */}
         <ImageCarousel />
        
-        <div className=" absolute  lg:top-8 lg:-left-[25vw]  xl:left-[10vw]   xs:-left-[35vw] xs:-top-[20vh] ss:-left-[20vw] ss:-top-[18vh]  sm:-left-[20vw] sm:-top-[15vh] xl:-top-[25ch]  -z-10">
+        <div className=" absolute  lg:top-8 lg:-left-[25vw]  xl:left-[10vw]   xs:-left-[35vw] xs:-top-[20vh] ss:-left-[20vw] ss:-top-[18vh]  sm:-left-[20vw] sm:-top-[15vh] xl:-top-[25ch]  z-1">
           <div
             className="absolute h-[1000px] xl:h-[1400px] lg:h-[1600px] w-[1450px]  sm:h-[130rem] sm:w-[205rem] bg-gradient-to-b from-yellow-400 via-transparent to-transparent rounded-[743.5px/595.5px]"
             style={{
