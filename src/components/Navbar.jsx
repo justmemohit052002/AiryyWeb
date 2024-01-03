@@ -14,7 +14,7 @@ const Navbar = () => {
   const [MobileMenu, setMobileMenu] = useState(false);
   return (
     <div className="">
-      <header className="sticky snap-start z-[139] top-0 border-b border-transparent backdrop-blur-sm transition duration-200 ease-in-out animate-header-slide-down-fade">
+      <header className="sticky snap-start z-[139] top-0 border-b border-transparent backdrop-blur-sm ">
         <div className="md:max-w-7xl mx-auto w-full max-w-5xl px-6">
           <div className="absolute left-0 top-0 z-20 flex w-full flex-col items-center bg-root md:hidden">
             <div className="flex w-full items-center px-6 py-4">
