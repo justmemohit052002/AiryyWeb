@@ -23,6 +23,7 @@ module.exports = {
         primary: "#131424",
         secondary: "#393A47",
         accent: "#F13024",
+        dimWhite: "rgba(255, 255, 255, 0.7)",
         fontFamily: {},
         fontSize: {},
         fontWeight: {},

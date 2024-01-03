@@ -31,7 +31,7 @@ const Contact = () => {
     >
       <div
         id="Desktop"
-        className="overflow-hidden bg-black relative flex flex-row w-full font-poppins items-start"
+        className="overflow-hidden relative flex flex-row w-full font-poppins items-start"
       >
         <div
           id="Ellipse1"
@@ -40,11 +40,11 @@ const Contact = () => {
           <div className="flex flex-col gap-5 w-3/5 font-poppins items-start mb-1 ml-48">
             <div
               id="GetInTouch"
-              className="text-5xl font-poppins tracking-[6.48] uppercase text-white "
+              className="text-5xl font-poppins tracking-[6.48] uppercase dark:text-white "
             >
               Get in Touch.{" "}
             </div>
-            <div className="text-wrap w-full text-xl font-poppins font-medium uppercase text-[#d3d0d0]">
+            <div className="text-wrap w-full text-xl font-poppins font-medium uppercase dark:text-[#d3d0d0]">
               Have questions or need assistance? We are here to help. Contact
               our friendly team at AiRYY Rides for any inquiries, support or
               partnership opportunities.
@@ -61,7 +61,7 @@ const Contact = () => {
               loading="lazy"
               referrerpolicy="no-referrer-when-downgrade"
             ></iframe>
-             <div className="flex  flex-row gap-3 mt-4 ">
+             <div className="flex dark:text-white  flex-row gap-3 mt-4 ">
             <CiFacebook className="cursor-pointer" size={28} />
             <RiTwitterXLine className="cursor-pointer" size={28} />
             <FaInstagram className="cursor-pointer" size={28} />
@@ -80,10 +80,10 @@ const Contact = () => {
 
         <div className="formContainer z-[1000] top-32 px-10">
           <motion.div
-            className="phoneSvg mt-20"
+            className="phoneSvg mt-0"
             initial={{ opacity: 1 }}
             whileInView={{ opacity: 0 }}
-            transition={{ delay: 3, duration: 1 }}
+            transition={{ delay: 2, duration: 1 }}
           >
             <svg width="450px" height="450px" viewBox="0 0 32.666 32.666">
               <motion.path
@@ -92,6 +92,7 @@ const Contact = () => {
                 initial={{ pathLength: 0 }}
                 animate={isInView && { pathLength: 1 }}
                 transition={{ duration: 3 }}
+                end={{pathLength:0}}
                 d="M28.189,16.504h-1.666c0-5.437-4.422-9.858-9.856-9.858l-0.001-1.664C23.021,4.979,28.189,10.149,28.189,16.504z
             M16.666,7.856L16.665,9.52c3.853,0,6.983,3.133,6.981,6.983l1.666-0.001C25.312,11.735,21.436,7.856,16.666,7.856z M16.333,0
             C7.326,0,0,7.326,0,16.334c0,9.006,7.326,16.332,16.333,16.332c0.557,0,1.007-0.45,1.007-1.006c0-0.559-0.45-1.01-1.007-1.01
@@ -109,10 +110,10 @@ const Contact = () => {
             </svg>
           </motion.div>
           <motion.form
-          className="mt-20"
+          className="mt-0"
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
-            transition={{ delay: 4, duration: 1 }}
+            transition={{ delay: 2.5, duration: 1 }}
           >
             <input
               className="placeholder-black"

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import CanvasModel from "./3dLogo/CanvasModel";
 import { CiMenuBurger } from "react-icons/ci";
-import Logo from "../assets/airryLogo.webp";
+import Logo from "../assets/logowhite.jpg";
 
 const Navbar = () => {
   const scrollToSection = (sectionId) => {
@@ -127,7 +127,7 @@ const Navbar = () => {
             <ul className="flex items-center gap-4">
               <li>
                 <a
-                  className="cursor-pointer outline-none transition duration-150 ease-in-out focus-visible:ring-2 focus-visible:ring-slate-7 rounded-md px-1 py-1 text-sm font-medium text-slate-11 hover:text-slate-12 focus-visible:text-slate-12 lg:px-2"
+                  className="cursor-pointer dark:text-white outline-none transition duration-150 ease-in-out focus-visible:ring-2 focus-visible:ring-slate-7 rounded-md px-1 py-1 text-sm font-medium text-slate-11 hover:text-slate-12 focus-visible:text-slate-12 lg:px-2"
                   onClick={() => scrollToSection("About")}
                 >
                   About
@@ -136,7 +136,7 @@ const Navbar = () => {
   
               <li>
                 <a
-                  className="cursor-pointer outline-none transition duration-150 ease-in-out focus-visible:ring-2 focus-visible:ring-slate-7 rounded-md px-1 py-1 text-sm font-medium text-slate-11 hover:text-slate-12 focus-visible:text-slate-12 lg:px-2"
+                  className="cursor-pointer dark:text-white outline-none transition duration-150 ease-in-out focus-visible:ring-2 focus-visible:ring-slate-7 rounded-md px-1 py-1 text-sm font-medium text-slate-11 hover:text-slate-12 focus-visible:text-slate-12 lg:px-2"
                   onClick={() => scrollToSection("Services")}
                 >
                   Services
@@ -144,7 +144,7 @@ const Navbar = () => {
               </li>
               <li>
                 <a
-                  className="cursor-pointer outline-none transition duration-150 ease-in-out focus-visible:ring-2 focus-visible:ring-slate-7 rounded-md px-1 py-1 text-sm font-medium text-slate-11 hover:text-slate-12 focus-visible:text-slate-12 lg:px-2"
+                  className="cursor-pointer dark:text-white outline-none transition duration-150 ease-in-out focus-visible:ring-2 focus-visible:ring-slate-7 rounded-md px-1 py-1 text-sm font-medium text-slate-11 hover:text-slate-12 focus-visible:text-slate-12 lg:px-2"
                   onClick={() => scrollToSection("Testimonials")}
                 >
                   Testimonials
@@ -153,15 +153,15 @@ const Navbar = () => {
               <li
               >
                 <a
-                  className="cursor-pointer outline-none transition duration-150 ease-in-out focus-visible:ring-2 focus-visible:ring-slate-7 rounded-md px-1 py-1 text-sm font-medium text-slate-11 hover:text-slate-12 focus-visible:text-slate-12 lg:px-2"
-                  onClick={() => scrollToSection("Electric")}
+                  className="cursor-pointer dark:text-white outline-none transition duration-150 ease-in-out focus-visible:ring-2 focus-visible:ring-slate-7 rounded-md px-1 py-1 text-sm font-medium text-slate-11 hover:text-slate-12 focus-visible:text-slate-12 lg:px-2"
+                  onClick={() => scrollToSection("Bikes")}
                 >
                   Electric
                 </a>
               </li>
               <li>
                 <a
-                  className="cursor-pointer outline-none transition duration-150 ease-in-out focus-visible:ring-2 focus-visible:ring-slate-7 rounded-md px-1 py-1 text-sm font-medium text-slate-11 hover:text-slate-12 focus-visible:text-slate-12 lg:px-2"
+                  className="cursor-pointer dark:text-white outline-none transition duration-150 ease-in-out focus-visible:ring-2 focus-visible:ring-slate-7 rounded-md px-1 py-1 text-sm font-medium text-slate-11 hover:text-slate-12 focus-visible:text-slate-12 lg:px-2"
                   onClick={() => scrollToSection("Contact")}
                 >
                   Contact
@@ -171,7 +171,7 @@ const Navbar = () => {
             <div class="flex gap-4">
             
               <a
-                class="outline-none  focus-visible:ring-slate-7 text-sm h-10 pl-4 pr-2 gap-0 font-semibold bg-white text-black hover:bg-white/90 focus-visible:ring-4 focus-visible:ring-white/30 focus-visible:outline-none focus-visible:bg-white/90 disabled:hover:bg-white inline-flex items-center border justify-center select-none rounded-full disabled:cursor-not-allowed disabled:opacity-70 transition ease-in-out duration-200"
+                class="outline-none  cursor-pointer focus-visible:ring-slate-7 text-sm h-10 pl-4 pr-2 gap-0 font-semibold bg-white text-black hover:bg-white/90 focus-visible:ring-4 focus-visible:ring-white/30 focus-visible:outline-none focus-visible:bg-white/90 disabled:hover:bg-white inline-flex items-center border justify-center select-none rounded-full disabled:cursor-not-allowed disabled:opacity-70 transition ease-in-out duration-200"
                 data-state="closed"
                 
               >

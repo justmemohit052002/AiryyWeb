@@ -18,8 +18,9 @@ const BlockquoteComponent = ({ monial, index }) => {
       <div className="flex flex-col mt-12 ml-8 sm:ml-10 h-60 justify-between">
         {/* Image */}
         <img
-          className="w-[64.13px] h-[70.24px] rounded-full"
+          className="w-[194.13px] h-[170.24px] rounded-full"
           src={monial.image}
+          
         />
         {/* name */}
         <div className="mb-28 sm:ml-2">{monial.name}</div>
@@ -149,7 +150,7 @@ const Testimonials = () => {
   return (
     <>
       <div id='Testimonials' className="Testimonials snap-center   flex flex-row justify-between items-center px-40">
-        <div className="relative  -top-10 left-60 right-0 -z-10 h-[400px] w-full">
+        <div className="relative  -top-20 left-60 right-0 -z-9 h-[400px] w-full">
           <svg
             className="absolute"
             width="1132"
@@ -180,18 +181,16 @@ const Testimonials = () => {
 
         {/* text */}
         <div className="flex relative right-72 bottom-40 ">
-          <div className="text-white    font-poppins">
+          <div className="dark:text-white    font-poppins">
             <div className="flex flex-col font-poppins">
-              <span className="xl:-left-24 text-[34px] font-poppins">
-                Testimonials
-              </span>
+            
               <span className="xl:-left-24  text-[32px] font-poppins">
                 What Our Riders Say.
               </span>
             </div>
 
-            <div className="w-[300px]  h-[25.31px] text-white sm:text-5xl lg:text-2xl  font-poppins">
-              <div className="text-white mt-8  sm:text-[25px] xl:text-[18px]   font-poppins leading-9 w-[250px] text-justify">
+            <div className="w-[300px]  h-[25.31px]  sm:text-5xl lg:text-2xl  font-poppins">
+              <div className="dark:text-dimWhite mt-8  sm:text-[25px] xl:text-[24px]   font-poppins leading-9 w-[490px] text-justify">
                 Don't just take our word for it hear from our satisfied riders
                 who have experienced the joy of AiRYY Rides.
               </div>
@@ -200,12 +199,12 @@ const Testimonials = () => {
         </div>
 
         {/* Card */}
-        {/* Card */}
+    
         <link
           href="https://cdn.jsdelivr.net/npm/keen-slider@6.8.6/keen-slider.min.css"
           rel="stylesheet"
         />
-        <div className="flex-col">
+        <div className="flex-col z-[100]">
           <div className="w-[42rem]  bg-white rounded-[4rem]">
             <div
               onMouseLeave={() => {
@@ -230,11 +229,11 @@ const Testimonials = () => {
           </div>
 
           {/* Arrow */}
-          <div className="hidden   lg:mt-8 lg:flex justify-center lg:gap-4">
+          <div className="hidden z-[100]  lg:mt-8 lg:flex justify-center lg:gap-4">
             <button
               aria-label="Previous slide"
               id="keen-slider-previous-desktop"
-              className="rounded-full  border border-[#FFD600] p-3  text-[#FFD600] transition hover:bg-[#FFD600] hover:text-black dark:text-black"
+              className="rounded-full border-2 border-[#FFD600] p-4  transition  hover:bg-[#FFD600] text-black dark:text-white dark:hover:text-black"
               style={{
                 width: "52px",
                 height: "52px",
@@ -259,7 +258,7 @@ const Testimonials = () => {
             <button
               aria-label="Next slide"
               id="keen-slider-next-desktop"
-              className="rounded-full border border-[#FFD600] p-3  text-[#FFD600] transition hover:bg-[#FFD600] hover:text-black dark:text-black"
+              className="rounded-full border-2 border-[#FFD600] p-4  transition  hover:bg-[#FFD600] text-black dark:text-white dark:hover:text-black"
               style={{
                 width: "52px",
                 height: "52px",
@@ -288,7 +287,7 @@ const Testimonials = () => {
             <button
               aria-label="Previous slide"
               id="keen-slider-previous"
-              className="rounded-full border border-[#FB9039] p-4 text-[#FB9039] transition hover:bg-[#FB9039] hover:text-white dark:text-black"
+              className="rounded-full border-2 border-[#FFD600] p-4  transition  hover:bg-[#FFD600] text-black dark:text-white dark:hover:text-black"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -309,7 +308,7 @@ const Testimonials = () => {
             <button
               aria-label="Next slide"
               id="keen-slider-next"
-              className="rounded-full border border-[#FB9039] p-4 text-[#FB9039] transition hover:bg-[#FB9039] hover:text-white dark:text-black"
+              className="rounded-full border-2 border-[#FFD600] p-4  transition  hover:bg-[#FFD600] text-black dark:text-white dark:hover:text-black"
             >
               <svg
                 className="h-5 w-5"
