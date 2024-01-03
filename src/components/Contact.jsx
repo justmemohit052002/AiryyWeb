@@ -50,17 +50,22 @@ const Contact = () => {
               partnership opportunities.
             </div>
           </div>
-          <div className="relative z-[1001] left-48">
+          <div className="relative z-[1001] h-96 left-48">
             <span className="block font-poppins font-medium uppercase">
               Click on Map to Reach the Pickup location.
             </span>
             <iframe
-              className=" w-[140%] h-96  rounded-[2rem]"
+              className=" w-full   rounded-[2rem]"
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3687.467957738305!2d75.86182427385859!3d22.687931523086643!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3962fd038adfe389%3A0x2aa0548bdd308fea!2sAiRYY%20Rides!5e0!3m2!1sen!2sin!4v1704033687769!5m2!1sen!2sin"
               allowfullscreen=""
               loading="lazy"
               referrerpolicy="no-referrer-when-downgrade"
             ></iframe>
+             <div className="flex  flex-row gap-3 mt-4 ">
+            <CiFacebook className="cursor-pointer" size={28} />
+            <RiTwitterXLine className="cursor-pointer" size={28} />
+            <FaInstagram className="cursor-pointer" size={28} />
+          </div>
           </div>
 
         
@@ -130,11 +135,7 @@ const Contact = () => {
               name="message"
             />
             <button>Submit</button>
-            <div className="flex  flex-row gap-3 ">
-            <CiFacebook className="cursor-pointer" size={28} />
-            <RiTwitterXLine className="cursor-pointer" size={28} />
-            <FaInstagram className="cursor-pointer" size={28} />
-          </div>
+           
           </motion.form>
         </div>
       </div>
