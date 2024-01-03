@@ -7,35 +7,40 @@ import PlaceOutlinedIcon from "@mui/icons-material/PlaceOutlined";
 import { CiFacebook } from "react-icons/ci";
 import { FaInstagram } from "react-icons/fa6";
 import { RiTwitterXLine } from "react-icons/ri";
-import Logo from "../assets/airryLogo.webp";
+import Logo from "../assets/airyyLogo.png";
 function Footer() {
   const gradientStyle = {
     background: "linear-gradient(to bottom, black, #1d1b1c)",
   };
 
   return (
-    <div id="Footer" className="w-full snap-center   h-3/6" style={gradientStyle}>
-      <div className="ss:flex-col xs:flex-col flex flex-row items-center justify-around px-14">
+    <div
+      id="Footer"
+      className="w-full snap-center   h-3/6"
+      style={gradientStyle}
+    >
+      <div className=" ss:flex-col xs:flex-col flex flex-row items-center justify-around px-14">
         <div className="xs:flex xs:flex-col xs:justify-center xs:items-center">
-        
-              <div className="flex-auto">
-                <a
-                  className="cursor-pointer outline-none transition duration-150 ease-in-out focus-visible:ring-2 focus-visible:ring-slate-7"
-                  onClick={() => scrollToSection("Hero")}
-                >
-                  <img
-                    className="w-44 bg-blend-color bg-no-repeat"
-                    src={Logo}
-                    alt=""
-                  />
-                </a>
-              </div>
-          <h2 className="text-gray-300 font-poppins mt-1  xs:text-[18px] text-[20px] font-medium">
-            Rent it now!
-          </h2>
-          <p className="text-gray-300  ss:text-[20px] ss:text-center  font-poppins mt-1 xs:hidden xs:text-[18px] text-[25px]">
-            Explore the city with ease. Rent a bike today!
-          </p>
+          <div className="flex-auto">
+            <a
+              className="cursor-pointer outline-none transition duration-150 ease-in-out focus-visible:ring-2 focus-visible:ring-slate-7"
+              onClick={() => scrollToSection("Hero")}
+            >
+              <img
+                className="w-44 bg-blend-color bg-no-repeat"
+                src={Logo}
+                alt=""
+              />
+            </a>
+          </div>
+          <div className="">
+            <h2 className="text-gray-300 font-poppins mt-1  xs:text-[18px] text-[20px] font-medium">
+              Rent it now!
+            </h2>
+            <p className="text-gray-300 sm:py-1  ss:text-[20px] ss:text-center  font-poppins mt-1 xs:hidden xs:text-[18px] text-[25px]">
+              Explore the city with ease. Rent a bike today!
+            </p>
+          </div>
         </div>
         <Zoom bottom>
           <img
@@ -67,7 +72,7 @@ function Footer() {
             </li>
           </ul>
           <div className="flex flex-row gap-4 h-[5rem]  py-4">
-          <CiFacebook size={28}/>
+            <CiFacebook size={28} />
             <RiTwitterXLine className="cursor-pointer" size={28} />
             <FaInstagram className="cursor-pointer" size={28} />
           </div>
