@@ -17,13 +17,12 @@ const App = () => {
 
   return (
     <div>
-
       <Navbar />
       <Hero />
       <Services />
+      <Bikes />
       <Testimonials />
       <About />
-      <Bikes />
       <Contact />
       <Footer />
     </div>
@@ -31,3 +30,11 @@ const App = () => {
 };
 
 export default App;
+
+
+
+// https://www.minimal.gallery
+// https://www.darkmodedesign.com/
+// https://www.awwwards.com/
+// https://refero.design/
+// https://stacksorted.com/

@@ -1,9 +1,10 @@
-import React from "react";
+'use client'
+import React, { useEffect, useState } from "react";
 import CanvasModel from "./3dLogo/CanvasModel";
 import { CiMenuBurger } from "react-icons/ci";
-import Logo from "../assets/airryLogo.webp"
+import Logo from "../assets/airryLogo.webp";
+
 const Navbar = () => {
-  // Scroll to the target section
   const scrollToSection = (sectionId) => {
     const section = document.getElementById(sectionId);
     if (section) {
@@ -11,88 +12,210 @@ const Navbar = () => {
     }
   };
 
+  const [MobileMenu, setMobileMenu] = useState(false);
+  const [header, setHeader] = useState(false);
+
+  const scrollHeader = () => {
+    if (window.scrollY >= 292) {
+      setHeader(true)
+    } else {
+      setHeader(false)
+    }
+  }
+
+  useEffect(() => {
+    window.addEventListener('scroll', scrollHeader)
+    return () => {
+      window.addEventListener('scroll', scrollHeader)
+    }
+  }, [])
   return (
-    <>
-      <div className=" fixed z-[100]">
-        <div className="xs:hidden bg-blend-color bg-no-repeat ss:hidden  sm:hidden absolute md:flex   md:left-[10px]    lg:left-[60px] xl:left-[20px] top-[20px] lg:top-[0px]  w-screen   z-[100] text-white md:p-8 lg:py-8 lg:px-12  flex-row items-center justify-between">
-          <img className="w-24 bg-blend-color bg-no-repeat" src={Logo} alt=''/>
-          
-
-          <div className="flex flex-row gap-4 lg:gap-8 relative md:left-[8rem] sm:text-[1.7rem] md:text-3xl lg:text-xl  items-center">
-            <a
-              className="cursor-pointer font-poppins"
-              onClick={() => scrollToSection("Hero")}
-            >
-              Home
-            </a>
-            <a
-              className="cursor-pointer font-poppins"
-              onClick={() => scrollToSection("About")}
-            >
-              About
-            </a>
-            <a
-              className="cursor-pointer font-poppins"
-              onClick={() => scrollToSection("Contact")}
-            >
-              Contact
-            </a>
-          </div>
-          <div className="w-[292.61px]  md:left-[10rem] lg:left-[8rem] cursor-pointer  relative justify-start items-center gap-[25px] inline-flex">
-            <div className="px-4 py-2.5 bg-white rounded-md justify-center items-center gap-2.5 flex">
-              <div className="text-black text-sm font-semibold font-poppins leading-[18px]">
-                Contact Now
+    <div className={header ? "fixed w-[100%] text-[#ffffff] bg-[yellow]" : "bg-[transparent]"}>
+      <header className="sticky snap-start z-[139] top-0 border-b border-transparent backdrop-blur-sm ">
+        <div className="md:max-w-7xl mx-auto w-full max-w-5xl px-6">
+          <div className="absolute left-0 top-0 z-20 flex w-full flex-col items-center bg-root md:hidden">
+            <div className="flex w-full items-center px-6 py-4">
+              <div className="flex-auto">
+                <a
+                  className="cursor-pointer outline-none transition duration-150 ease-in-out focus-visible:ring-2 focus-visible:ring-slate-7"
+                  onClick={() => scrollToSection("Hero")}
+                >
+                  <img
+                    className="w-24 bg-blend-color bg-no-repeat"
+                    src={Logo}
+                    alt=""
+                  />
+                </a>
+              </div>
+              <div className="flex flex-auto justify-end">
+                <button
+                  aria-controls="mobile-menu"
+                  aria-expanded="false"
+                  aria-label="menu"
+                  className="inline-flex items-center justify-center rounded-md p-1 text-slate-11 transition ease-in-out hover:bg-slate-5 hover:text-slate-12 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-slate-6"
+                  type="button"
+                  onClick={() => setMobileMenu(!MobileMenu)}
+                >
+                  <span className="sr-only">Open main menu</span>
+                  {!MobileMenu ? (
+                    <svg
+                      aria-hidden="true"
+                      className="block h-8 w-8"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="1.5"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      ></path>
+                    </svg>
+                  ) : (
+                    <svg
+                      aria-hidden="true"
+                      class="block h-8 w-8"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="1.5"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M6 18L18 6M6 6l12 12"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      ></path>
+                    </svg>
+                  )}
+                </button>
               </div>
             </div>
-          </div>
-        </div>
+            {MobileMenu ? (
+              <div
+                className="flex bg-black h-screen  w-full px-6 py-4 md:hidden block"
+                id="mobile-menu"
+              >
+                <div className="flex w-full flex-col">
+                  <a
+                    className="text-base h-11 pl-4 pr-4 rounded-md gap-2 font-semibold bg-white text-black hover:bg-white/90 focus-visible:ring-2 focus-visible:ring-white/20 focus-visible:outline-none focus-visible:bg-white/90 disabled:hover:bg-white inline-flex items-center border justify-center select-none disabled:cursor-not-allowed disabled:opacity-70 transition ease-in-out duration-200 mb-4 w-full"
+                    href="/signup"
+                  >
+                    Contact Now
+                  </a>
+                  <a
+                    className="text-md block w-full border-b border-slate-6 py-4 font-semibold text-slate-11 transition duration-200 ease-in-out last:border-none hover:text-slate-12"
+                    href="/about"
+                  >
+                    About
+                  </a>
 
-
-
-
-
-
-        
-
-        <div className="md:hidden sm:flex xs:text-4xl ss:text-4xl sm:text-5xl w-screen fixed z-[100] bg-[#000]  text-white p-8 xs:flex xs:flex-row ss:flex ss:flex-row items-center justify-between">
-          {/* logo */}
-          <img className="w-24 bg-blend-color bg-no-repeat" src={Logo} alt=''/>
-          {/* menu */}
-          <div className="">
-            <CiMenuBurger />
-          </div>
-        </div>
-      </div>
-
-      <div className="xs:hidden ss:hidden sm:hidden  xl:hidden">
-        <div className="w-[1487px] h-[1191px] left-[281px] top-[153px] absolute bg-gradient-to-b from-yellow-400 via-neutral-950 to-transparent rounded-full" />
-
-        <div className="w-[872px] h-9 left-[76px] top-[55px] absolute justify-between items-center inline-flex">
-          <div className="w-24 h-[44px] justify-center items-center flex">
-            AiRYY Rides
-          </div>
-
-          <div className="justify-start items-center gap-[45px] flex">
-            <div className="text-white text-base font-medium font-['Inter'] leading-none">
-              Home
-            </div>
-            <div className="text-white text-base font-medium font-['Inter'] leading-none">
-              About
-            </div>
-            <div className="text-white text-base font-medium font-['Inter'] leading-none">
-              Contact
-            </div>
-          </div>
-          <div className="justify-start items-center gap-[25px] flex">
-            <div className="px-4 py-2.5 bg-white rounded-md justify-center items-center gap-2.5 flex">
-              <div className="text-black text-sm font-semibold font-['Inter'] leading-[18px]">
-                Contact Now
+                  <a
+                    className="text-md block w-full border-b border-slate-6 py-4 font-semibold text-slate-11 transition duration-200 ease-in-out last:border-none hover:text-slate-12"
+                    href="/contact"
+                  >
+                    Contact
+                  </a>
+                </div>
               </div>
+            ) : null}
+          </div>
+          <div className="mx-auto hidden h-[58px] w-full items-center justify-between transition duration-500 ease-in-out md:flex">
+            <div className="flex lg:w-[225px]">
+              <span
+                data-state="closed"
+                className=""
+
+              // style={"-webkit-touch-callout:none"}
+              >
+                <a
+                  className="cursor-pointer outline-none transition duration-150 ease-in-out focus-visible:ring-2 focus-visible:ring-slate-7 py-1"
+                  aria-label="Resend"
+                  onClick={() => scrollToSection("Hero")}
+                >
+                  <img
+                    className="w-24 bg-blend-color bg-no-repeat"
+                    src={Logo}
+                    alt=""
+                  />
+                </a>
+              </span>
+            </div>
+            <ul className="flex items-center gap-4">
+              <li>
+                <a
+                  className="cursor-pointer outline-none transition duration-150 ease-in-out focus-visible:ring-2 focus-visible:ring-slate-7 rounded-md px-1 py-1 text-sm font-medium text-slate-11 hover:text-slate-12 focus-visible:text-slate-12 lg:px-2"
+                  onClick={() => scrollToSection("About")}
+                >
+                  About
+                </a>
+              </li>
+
+              <li>
+                <a
+                  className="cursor-pointer outline-none transition duration-150 ease-in-out focus-visible:ring-2 focus-visible:ring-slate-7 rounded-md px-1 py-1 text-sm font-medium text-slate-11 hover:text-slate-12 focus-visible:text-slate-12 lg:px-2"
+                  onClick={() => scrollToSection("Services")}
+                >
+                  Services
+                </a>
+              </li>
+              <li>
+                <a
+                  className="cursor-pointer outline-none transition duration-150 ease-in-out focus-visible:ring-2 focus-visible:ring-slate-7 rounded-md px-1 py-1 text-sm font-medium text-slate-11 hover:text-slate-12 focus-visible:text-slate-12 lg:px-2"
+                  onClick={() => scrollToSection("Testimonials")}
+                >
+                  Testimonials
+                </a>
+              </li>
+              <li
+              >
+                <a
+                  className="cursor-pointer outline-none transition duration-150 ease-in-out focus-visible:ring-2 focus-visible:ring-slate-7 rounded-md px-1 py-1 text-sm font-medium text-slate-11 hover:text-slate-12 focus-visible:text-slate-12 lg:px-2"
+                  onClick={() => scrollToSection("Electric")}
+                >
+                  Electric
+                </a>
+              </li>
+              <li>
+                <a
+                  className="cursor-pointer outline-none transition duration-150 ease-in-out focus-visible:ring-2 focus-visible:ring-slate-7 rounded-md px-1 py-1 text-sm font-medium text-slate-11 hover:text-slate-12 focus-visible:text-slate-12 lg:px-2"
+                  onClick={() => scrollToSection("Contact")}
+                >
+                  Contact
+                </a>
+              </li>
+            </ul>
+            <div class="flex gap-4">
+
+              <a
+                class="outline-none  focus-visible:ring-slate-7 text-sm h-10 pl-4 pr-2 gap-0 font-semibold bg-white text-black hover:bg-white/90 focus-visible:ring-4 focus-visible:ring-white/30 focus-visible:outline-none focus-visible:bg-white/90 disabled:hover:bg-white inline-flex items-center border justify-center select-none rounded-full disabled:cursor-not-allowed disabled:opacity-70 transition ease-in-out duration-200"
+                data-state="closed"
+
+              >
+                Contact Now
+                <span class="text-[#70757E]">
+                  <svg
+                    fill="none"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    width="24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M10.75 8.75L14.25 12L10.75 15.25"
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="1.5"
+                    ></path>
+                  </svg>
+                </span>
+              </a>
             </div>
           </div>
         </div>
-      </div>
-    </>
+      </header>
+    </div>
   );
 };
 

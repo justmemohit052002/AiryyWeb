@@ -4,14 +4,15 @@ import ImageCarousel from "./ImageCoursel";
 import { frame, motion } from "framer-motion";
 
 const Hero = () => {
-  const scrollToSection = (sectionId) => {
-    const section = document.getElementById(sectionId);
-    if (section) {
-      section.scrollIntoView({ behavior: "smooth" });
-    }
+
+  const whatsappNumber = "8109475317"; // Replace with your actual WhatsApp number
+
+  const handleRentNowClick = () => {
+    const whatsappLink = `https://wa.me/${whatsappNumber}`;
+    window.location.href = whatsappLink;
   };
   return (
-    <div id="Hero" className="h-screen relative">
+    <div id="Hero" className="h-screen  relative">
       {/* Mobile */}
 
       <div className="absolute sm:hidden   left-[20px] sm:left-[55px]">
@@ -41,7 +42,7 @@ const Hero = () => {
       </div>
 
       {/* Screen */}
-      <div className=" xs:hidden ss:hidden h-[135px] left-[46px]  lg:left-[90px]  top-[344px] lg:top-[254px] z-20 absolute">
+      <div className=" xs:hidden ss:hidden h-[135px] left-[46px]  lg:left-[90px]  top-[344px] lg:top-[154px] z-20 absolute">
         <div className="w-[483.30px] text-yellow-500 left-0 top-0 absolute text-[54px] font-medium font-poppins uppercase tracking-[6.48px]">
           AiRYY Rides!
         </div>
@@ -50,21 +51,21 @@ const Hero = () => {
         </div>
       </div>
 
-      <div className="xs:hidden ss:hidden w-[595px] h-[49px] left-[46px]  md:left-[45px]  lg:left-[90px] top-[539px] lg:top-[439px] z-20 absolute text-white text-[19px] font-semibold font-poppins leading-[18px]">
+      <div className="xs:hidden ss:hidden w-[595px] h-[49px] left-[46px]  md:left-[45px]  lg:left-[90px] top-[539px] lg:top-[339px] z-20 absolute text-white text-[19px] font-semibold font-poppins leading-[18px]">
         Your journey, your vehicle – experience travel like never before.
         <br />
       </div>
-      <div className="xs:hidden cursor-pointer ss:hidden px-4 py-2.5  left-[46px]  md:left-[45px]  lg:left-[90px] top-[627px] lg:top-[527px] absolute z-20 rounded-[10px] border-2 border-yellow-500 justify-start items-start gap-2 inline-flex">
+      <div className="xs:hidden cursor-pointer ss:hidden px-4 py-2.5  left-[46px]  md:left-[45px]  lg:left-[90px] top-[627px] lg:top-[427px] absolute z-20 rounded-[10px] border-2 border-yellow-500 justify-start items-start gap-2 inline-flex">
         <a
-          onClick={() => scrollToSection("About")}
+          onClick={handleRentNowClick}
           className="text-yellow-400 text-[15px] font-semibold font-['Inter'] leading-[18px]"
         >
-          Learn More
+          Rent Now
         </a>
       </div>
 
       {/* Image and gradient background */}
-      <div className="xs:left-[35vw] ss:left-[43vw] sm:left-[20vw]  lg:left-[25vw]  xl:-bottom-[20vh]  -bottom-[60vh]   relative  sm:-bottom-[48vh] lg:-bottom-[40vh]  xl:left-[30vw]">
+      <div className="xs:left-[25vw] ss:left-[20vw] sm:left-[20vw]  lg:left-[25vw]  xl:-bottom-[20vh]  -bottom-[60vh] ss:-bottom-[50vh]   relative  sm:-bottom-[48vh] lg:-bottom-[40vh]  xl:left-[30vw]">
         {/* <img
           className="xs:w-[22rem] xs:h-[20rem] ss:w-[22rem] ss:h-[20rem]  sm:w-[1115px] sm:h-[785px]  lg:w-[615px] lg:h-[485px]   z-10" // Increased z-index for the image
           alt="Activas"
@@ -73,14 +74,14 @@ const Hero = () => {
         /> */}
         <ImageCarousel />
        
-        <div className=" absolute  lg:top-8 lg:-left-[25vw]  xl:left-[10vw]   xs:-left-[45vw] xs:-top-[20vh] ss:-left-[45vw] ss:-top-[18vh]  sm:-left-[20vw] sm:-top-[15vh] xl:-top-[25ch]  -z-10">
+        <div className=" absolute  lg:top-8 lg:-left-[25vw]  xl:left-[10vw]   xs:-left-[35vw] xs:-top-[20vh] ss:-left-[20vw] ss:-top-[18vh]  sm:-left-[20vw] sm:-top-[15vh] xl:-top-[25ch]  -z-10">
           <div
             className="absolute h-[1000px] xl:h-[1400px] lg:h-[1600px] w-[1450px]  sm:h-[130rem] sm:w-[205rem] bg-gradient-to-b from-yellow-400 via-transparent to-transparent rounded-[743.5px/595.5px]"
             style={{
               position: "relative",
             }}
           />
-          <div className=" absolute  z-100 top-0 bottom-0 -left-20">
+          <div className=" absolute  z-100 top-0 bottom-0 -left-20  xs:-left-48" >
 
            <svg
            
