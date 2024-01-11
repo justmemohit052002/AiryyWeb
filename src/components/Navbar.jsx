@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import CanvasModel from "./3dLogo/CanvasModel";
 import { CiMenuBurger } from "react-icons/ci";
-import Logo from "../assets/logowhite.jpg";
+import Logo from "../assets/airyyLogo.png";
 
 const Navbar = () => {
   const scrollToSection = (sectionId) => {

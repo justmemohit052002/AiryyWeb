@@ -18,7 +18,7 @@ const Services = () => {
     
         <div className="flex flex-row gap-10 items-center justify-center mt-16 xs:overflow-x-auto ss:overflow-x-auto xs:w-full">
           {/* Box 1 */}
-          <div className="group xs:w-[50px] xs:h-[70px] w-[250px] h-[327px]  px-[35px] py-[95px] bg-slate-50 hover:bg-gradient-to-t from-black to-yellow-400 rounded-[30px] shadow flex-col justify-center items-center inline-flex transition-all duration-500">
+          <div className="group xs:w-[50px] xs:h-[70px]  w-[250px] h-[327px]  px-[35px] py-[95px] bg-slate-50 hover:bg-gradient-to-t from-black to-yellow-400 rounded-[30px] shadow flex-col justify-center items-center inline-flex transition-all duration-500">
             <div className="flex-col justify-center items-center gap-[35px] flex">
               <div className="self-stretch font-poppins text-center text-black text-[20px] font-bold">
                 24/7 Service

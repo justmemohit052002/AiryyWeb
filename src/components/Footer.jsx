@@ -7,11 +7,11 @@ import PlaceOutlinedIcon from "@mui/icons-material/PlaceOutlined";
 import { CiFacebook } from "react-icons/ci";
 import { FaInstagram } from "react-icons/fa6";
 import { RiTwitterXLine } from "react-icons/ri";
-import Logo from "../assets/logowhite.jpg";
+import Logo from "../assets/airyyLogo.png";
 function Footer() {
   return (
     <div id="Footer" className="w-full snap-center   h-3/6">
-      <div className="ss:flex-col xs:flex-col flex flex-row items-center justify-around px-14">
+      <div className="md:flex-row sm:flex-col ss:flex-col xs:flex-col flex flex-row items-center justify-around px-14">
         <div className="xs:flex xs:flex-col xs:justify-center xs:items-center">
           <div className="flex-auto">
             <a
