@@ -54,19 +54,19 @@ const Theme = () => {
   };
 
   return (
-    <div className={`fixed z-[1001] ${scrolling ? "z-[10000]" : ""} flex justify-end items-center h-full cursor-pointer right-0 md:-mr-9 xl:-mr-1 ${scrolling ? "md:py-5 " : "md:py-0 "} bg-transparent`}>
+    <div className={`fixed z-[1001] ${scrolling ? "z-[10000000]" : ""} flex justify-end items-center h-full cursor-pointer right-0 md:-mr-9 xl:-mr-1 ${scrolling ? "md:py-5 " : "md:py-0 "} bg-transparent`}>
       {isInitialRenderComplete && isLightMode !== undefined && ( // Check if the initial render is complete and isLightMode is defined
         isLightMode ? (
-          <FaMoon
-            onClick={toggleTheme}
-            style={{ height: "50px" }}
-            className={`xl:mx-5 text-black sm:mr-10`}
-          />
-        ) : (
           <FaSun
             onClick={toggleTheme}
             style={{ height: "50px" }}
             className={`xl:mx-5 text-[#FDB813] sm:mr-10`}
+          />
+        ) : (
+          <FaMoon
+            onClick={toggleTheme}
+            style={{ height: "50px" }}
+            className={`xl:mx-5 text-black sm:mr-10`}
           />
         )
       )}

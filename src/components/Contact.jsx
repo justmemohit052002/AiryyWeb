@@ -35,9 +35,9 @@ const Contact = () => {
       >
         <div
           id="Ellipse1"
-          className="xs:w-[500px]  xs:ml-[-253px] xs:flex xs:flex-col bg-[linear-gradient(73deg,_rgba(17,_16,_15,_0.3)_13%,rgba(238,_200,_0,_0)_82%)] bg-cover bg-50%_50% bg-blend-normal bg-no-repeat relative flex flex-col gap-16 w-3/5 h-[1017px] items-start mt-[-93px] mb-[-92px] ml-[-163px] pt-56 pb-[269px] pl-48 rounded-[50%]"
+          className="xs:w-[530px]  xs:ml-[-223px] xs:flex xs:flex-col bg-[linear-gradient(73deg,_rgba(17,_16,_15,_0.3)_13%,rgba(238,_200,_0,_0)_82%)] bg-cover bg-50%_50% bg-blend-normal bg-no-repeat relative flex flex-col gap-16 w-3/5 h-[1017px] items-start xs:mt-[-163px] mt-[-92px] xs:mb-[-192px]  mb-[-92px] ml-[-163px] pt-56 xs:pb-[229px] pb-[269px]   pl-48 rounded-[50%]"
         >
-          <div className="xs:justify-start xs:items-start flex flex-col gap-5 w-3/5 font-poppins items-start mb-1 ml-48 xs:ml-20 xs:w-full">
+          <div className="xs:justify-start xs:items-start flex flex-col gap-5 w-3/5 font-poppins items-start mb-1 ml-48 xs:ml-14 xs:w-full">
             <div
               id="GetInTouch"
               className="xs:flex xs:justify-start xs:items-start xs:text-xl text-3xl font-poppins tracking-[6.48] uppercase dark:text-white "
@@ -52,8 +52,8 @@ const Contact = () => {
               </p>
             </div>
           </div>
-          <div className="relative z-[1001] xs:h-20 h-96 xs:p-3 xs:top-[-60px] xs:left-[70px] left-48">
-            <span className="block font-poppins font-medium uppercase">
+          <div className="relative z-[1001] xs:h-20 h-96 xs:p-3 xs:top-[-60px] xs:left-[50px] left-48">
+            <span className="block font-poppins xs:text-[12px] xs:ml-2 dark:text-white font-medium uppercase">
               Click on Map to Reach the Pickup location.
             </span>
             <iframe
@@ -122,35 +122,34 @@ const Contact = () => {
             </svg>
           </motion.div>
           <motion.form
-            className="mt-0 xs:w-full xs:flex xs:flex-col xs:justify-center xs:items-center"
+            className="-ml-12 xs:w-full xs:flex xs:flex-col"
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             transition={{ delay: 2.5, duration: 1 }}
           >
             
               <input
-                className="placeholder-black xs:w-64"
+                className="placeholder-black xs:w-72"
                 type="text"
                 required
                 placeholder="Name"
                 name="name"
               />
               <input
-                className="placeholder-black xs:w-64"
+                className="placeholder-black xs:w-72"
                 type="email"
                 required
                 placeholder="Email"
                 name="email"
               />
               <textarea
-                className="placeholder-black h-full w-full xs:w-64 bg-gray-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10 border border-gray-100
-"
+                className="placeholder-black h-full w-full xs:w-72 bg-gray-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10 border border-gray-100"
                 rows={8}
                 placeholder="Message"
                 name="message"
               />
-              <div className="flex justify-center items-center">
-                <span className="bg-gray-900 xs:w-64  w-full py-3 rounded-2xl text-center cursor-pointer uppercase text-yellow-400 font-bold">
+              <div className="flex xs:w-72 justify-center items-center">
+                <span className="bg-gray-900 xs:w-72  w-full py-3 rounded-2xl text-center cursor-pointer uppercase text-yellow-400 font-bold">
                   Submit
                 </span>
               </div>

@@ -30,7 +30,7 @@ const Navbar = () => {
                   />
                 </a>
               </div>
-              <div className="flex flex-auto justify-end">
+              <div className="flex flex-auto dark:text-white justify-end">
                 <button
                   aria-controls="mobile-menu"
                   aria-expanded="false"

@@ -6,20 +6,20 @@ const Services = () => {
     <>
     <div
       id="Services"
-      className="Services snap-center z-[10]  h-screen mt-20 relative xs:w-full"
+      className="Services snap-center    z-[10]  h-screen mt-20 relative xs:w-full"
     >
       {/* Parent container with opacity */}
 
 
       {/* Heading outside the parent container with opacity */}
-      <h1 className=" dark:text-white text-center font-poppins xs:text-[15px] ss:text-[20px] text-[35px] font-bold mb-4 md:mb-0 md:col-span-3">
+      <h1 className=" dark:text-white text-center font-poppins xs:text-[25px]  ss:text-[20px] text-[35px] font-bold mb-4 xs:pt-40 md:mb-0 md:col-span-3">
         Why Choose AiRYY Rides?
       </h1>
     
-        <div className="flex flex-row gap-10 items-center justify-center mt-16 xs:overflow-x-auto ss:overflow-x-auto xs:w-full">
+        <div className="flex flex-row xs:flex-col gap-10 items-center justify-center mt-16 overflow-hidden xs:w-full">
           {/* Box 1 */}
-          <div className="group xs:w-[50px] xs:h-[70px]  w-[250px] h-[327px]  px-[35px] py-[95px] bg-slate-50 hover:bg-gradient-to-t from-black to-yellow-400 rounded-[30px] shadow flex-col justify-center items-center inline-flex transition-all duration-500">
-            <div className="flex-col justify-center items-center gap-[35px] flex">
+          <div className="group xs:w-[200px] xs:h-[300px]  w-[250px] h-[327px]  px-[35px] py-[95px] bg-slate-50 hover:bg-gradient-to-t from-black to-yellow-400 rounded-[30px] shadow flex-col justify-center items-center inline-flex transition-all duration-500">
+            <div className="flex-col  justify-center items-center gap-[35px] flex">
               <div className="self-stretch font-poppins text-center text-black text-[20px] font-bold">
                 24/7 Service
               </div>
@@ -29,16 +29,16 @@ const Services = () => {
                   embark on your adventure day or night.
                 </div>
                 <div className="px-2 py-2 bg-black rounded-md mt-8 border border-slate-50 justify-start items-start gap-2 inline-flex group-hover:bg-white transition-all duration-300">
-                  <div className="text-white group-hover:text-black font-poppins  text-base font-semibold leading-[18px]">
+                  <a className="text-white cursor-pointer  group-hover:text-black font-poppins  text-base font-semibold leading-[18px]">
                     Get Started Today
-                  </div>
+                  </a>
                 </div>
               </div>
             </div>
           </div>
 
           {/* Box 2 */}
-          <div className="group  xs:w-[200px] xs:h-[270px] w-[250px] h-[327px] flex-col justify-center items-center gap-[25px] inline-flex bg-slate-50 hover:bg-gradient-to-t from-black to-yellow-400 rounded-[30px] transition-all duration-500">
+          <div className="group  xs:w-[200px] xs:h-[300px] w-[250px] h-[327px] flex-col justify-center items-center gap-[25px] inline-flex bg-slate-50 hover:bg-gradient-to-t from-black to-yellow-400 rounded-[30px] transition-all duration-500">
             <svg
               width="210"
               height="297"
@@ -108,7 +108,7 @@ const Services = () => {
           </div>
 
           {/* Box 3 */}
-          <div className="group snap-center  snap-mandatory xs:w-[200px] xs:h-[270px] w-[250px] h-[327px] flex-col justify-center items-center gap-[25px] inline-flex bg-slate-50 hover:bg-gradient-to-t from-black to-yellow-400 rounded-[30px] transition-all duration-500">
+          <div className="group snap-center  snap-mandatory xs:w-[200px] xs:h-[300px] w-[250px] h-[327px] flex-col justify-center items-center gap-[25px] inline-flex bg-slate-50 hover:bg-gradient-to-t from-black to-yellow-400 rounded-[30px] transition-all duration-500">
             <svg
               width="210"
               height="297"
@@ -177,7 +177,7 @@ const Services = () => {
           </div>
 
           {/* Box 4 */}
-          <div className="group xs:w-[200px] xs:h-[270px] w-[250px] h-[327px] flex-col justify-center items-center gap-[25px] inline-flex bg-slate-50 hover:bg-gradient-to-t from-black to-yellow-400 rounded-[30px] transition-all duration-500">
+          <div className="group xs:w-[200px] xs:h-[300px] w-[250px] h-[327px] flex-col justify-center items-center gap-[25px] inline-flex bg-slate-50 hover:bg-gradient-to-t from-black to-yellow-400 rounded-[30px] transition-all duration-500">
             <motion.div
              
             >

@@ -7,7 +7,7 @@ import b5 from '../assets/BikeImg5.png'
 const Bikes = () => {
   return (
     <div id="Bikes" className="snap-center  ">
-     <h1 className="text-center font-poppins text-[25px] mb-20 font-extrabold pb-14">Bikes Information</h1>
+     <h1 className="text-center dark:text-white font-poppins text-[25px] mb-20 font-extrabold pb-14">Bikes Information</h1>
       <div className="flex  justify-center items-center h-[200px] mb-44 flex-row gap-8">
         {/* Card 1 */}
 

@@ -3,14 +3,14 @@ import KeenSlider from "https://cdn.jsdelivr.net/npm/keen-slider@6.8.6/+esm";
 import { monials } from "../Monials";
 const BlockquoteComponent = ({ monial, index }) => {
   return (
-    <div className="p-10 keen-slider__slide text-black flex flex-row justify-between">
-      <div className="flex flex-col h-60 justify-between">
+    <div className="p-10 xs:px-0 xs:py-0 xs:mb-0  keen-slider__slide  text-black flex flex-row justify-between">
+      <div className="flex flex-col  h-60   xs:ml-8 sm:justify-between">
         {/* text */}
         <span className="text-black text-[40px] font-bold font-['Judson'] leading-tight">
           “
         </span>
         {/* button */}
-        <div className="text-justify lg:text-2xl overflow-clip w-44 sm:w-80 lg:w-full lg:overflow-visible lg:mb-20 mb-10">
+        <div className="text-justify lg:text-2xl overflow-clip w-44 sm:w-80 lg:w-full lg:overflow-visible lg:mb-20 mb-10 xs:mb-0">
           {monial.Discription}
         </div>
       </div>
@@ -23,8 +23,11 @@ const BlockquoteComponent = ({ monial, index }) => {
           
         />
         {/* name */}
-        <div className="mb-28 sm:ml-2">{monial.name}</div>
+        <div className="mb-28 sm:ml-2 xs:text-[1rem] w-14 pl-4 flex justify-center">{monial.name}</div>
       </div>
+      <div className="border border-[#FFD600] ml-4 h-[20rem]"/>
+
+      
     </div>
   );
 };
@@ -37,7 +40,7 @@ const Testimonials = () => {
   const handleIntersection = (entries) => {
     const entry = entries[0];
     if (entry.isIntersecting) {
-      setAnimationDuration(50000000000);
+      setAnimationDuration(50000);
     } else {
       setAnimationDuration(50000);
     }
@@ -149,8 +152,8 @@ const Testimonials = () => {
 
   return (
     <>
-      <div id='Testimonials' className="Testimonials snap-center   flex flex-row justify-between items-center px-40">
-        <div className="relative  -top-20 left-60 right-0 -z-9 h-[400px] w-full">
+      <div id='Testimonials' className="Testimonials  snap-center xs:snap-start snap-mandatory flex flex-row  xs:flex-col justify-between items-center px-40   xs:px-0  xs:py-10 ">
+        <div className="relative  -top-20 left-60 right-0  xs:-top-20 xs:-left-[10rem]    -z-9 h-[400px] xs:h-[330px] w-full">
           <svg
             className="absolute"
             width="1132"
@@ -180,17 +183,17 @@ const Testimonials = () => {
         </div>
 
         {/* text */}
-        <div className="flex relative right-72 bottom-40 ">
+        <div className="flex relative right-72  xs:right-2 xs:bottom-56 bottom-40 ">
           <div className="dark:text-white    font-poppins">
             <div className="flex flex-col font-poppins">
             
-              <span className="xl:-left-24  text-[32px] font-poppins">
+              <span className="xl:-left-24   text-[32px] font-poppins">
                 What Our Riders Say.
               </span>
             </div>
 
             <div className="w-[300px]  h-[25.31px]  sm:text-5xl lg:text-2xl  font-poppins">
-              <div className="dark:text-dimWhite mt-8  sm:text-[25px] xl:text-[24px]   font-poppins leading-9 w-[490px] text-justify">
+              <div className="dark:text-dimWhite mt-8 xs:mt-2   sm:text-[25px] xl:text-[24px]   font-poppins leading-9 w-[490px] xs:w-[320px] text-justify">
                 Don't just take our word for it hear from our satisfied riders
                 who have experienced the joy of AiRYY Rides.
               </div>
@@ -204,15 +207,9 @@ const Testimonials = () => {
           href="https://cdn.jsdelivr.net/npm/keen-slider@6.8.6/keen-slider.min.css"
           rel="stylesheet"
         />
-        <div className="flex-col z-[100]">
-          <div className="w-[42rem]  bg-white rounded-[4rem]">
+        <div className="flex-col   z-[100]">
+          <div className="w-[42rem] xs:w-[20rem] -mt-20  xs:h-[20rem] bg-white rounded-[4rem] xs:rounded-[2rem]">
             <div
-              onMouseLeave={() => {
-                setAnimationDuration(50000);
-              }}
-              onMouseEnter={() => {
-                setAnimationDuration(50000000000);
-              }}
               id="keen-slider"
               ref={sliderRef}
               className="keen-slider  "
@@ -283,19 +280,20 @@ const Testimonials = () => {
 
           {/* Arrow 2 */}
 
-          <div className="mt-8 flex justify-center gap-4 lg:hidden">
+          <div className="mt-4 flex justify-center gap-4 lg:hidden">
             <button
               aria-label="Previous slide"
               id="keen-slider-previous"
-              className="rounded-full border-2 border-[#FFD600] p-4  transition  hover:bg-[#FFD600] text-black dark:text-white dark:hover:text-black"
+              className="rounded-full flex border-2 border-[#FFD600] h-10 w-10  transition  hover:bg-[#FFD600] text-black dark:text-white dark:hover:text-black"
             >
               <svg
+               className="h-3 w-3 flex-1 justify-center mt-3"
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
                 viewBox="0 0 24 24"
                 strokeWidth="1.5"
                 stroke="currentColor"
-                className="h-5 w-5 rtl:rotate-180"
+               
               >
                 <path
                   strokeLinecap="round"
@@ -304,14 +302,15 @@ const Testimonials = () => {
                 />
               </svg>
             </button>
+            
 
             <button
               aria-label="Next slide"
               id="keen-slider-next"
-              className="rounded-full border-2 border-[#FFD600] p-4  transition  hover:bg-[#FFD600] text-black dark:text-white dark:hover:text-black"
+              className="rounded-full flex border-2 border-[#FFD600] h-10 w-10  transition  hover:bg-[#FFD600] text-black dark:text-white dark:hover:text-black"
             >
               <svg
-                className="h-5 w-5"
+                className="h-3 w-3 flex-1 justify-center mt-3"
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"

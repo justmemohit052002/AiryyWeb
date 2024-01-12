@@ -24,7 +24,7 @@ const Hero = () => {
           <motion.span className="text-yellow-400 text-opacity-80 xs:text-5xl ss:text-5xl  sm:text-6xl   font-medium font-poppins uppercase leading-[48px] tracking-[2.88px]">
             !<br />
           </motion.span>
-          <motion.span className="text-white xs:text-2xl ss:text-3xl sm:text-4xl  font-medium font-poppins uppercase leading-[48px] tracking-widest">
+          <motion.span className="dark:text-white xs:text-2xl ss:text-3xl sm:text-4xl  font-medium font-poppins uppercase leading-[48px] tracking-widest">
             Rent-Return-Repete
           </motion.span>
           <motion.span className="text-white text-[45px] font-medium font-['Fredoka'] capitalize leading-[48px] tracking-[5.40px]">
@@ -33,8 +33,8 @@ const Hero = () => {
         </div>
 
         <div className=" max-w-1 cursor-pointer sm:hidden relative top-[240px] z-full  z-10">
-          <div className="w-[145px] h-[38px] px-4 py-5 bg-white rounded-md justify-center items-center gap-3.5 inline-flex">
-            <div className="text-black text-sm font-semibold font-poppins leading-[18px]">
+          <div className="w-[145px] h-[38px] px-4 py-5 dark:bg-white bg-black rounded-md justify-center items-center gap-3.5 inline-flex">
+            <div className="dark:text-black text-white text-sm font-semibold font-poppins leading-[18px]">
               Contact Now 
             </div>
           </div>

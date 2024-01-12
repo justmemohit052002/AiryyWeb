@@ -44,7 +44,7 @@ function Footer() {
       </div>
       <div className="flex flex-row ss:ml-0 ss:px-4 xs:justify-between xs:ml-0 xs:px-8 xs:py-3 justify-around items-center ml-20 py-6">
         <div>
-          <h1 className="text-bold font-poppins pb-2 ss:text-[18px] xs:text-[18px] text-[25px] border-yellow-200">
+          <h1 className="text-bold dark:text-white font-poppins pb-2 ss:text-[18px] xs:text-[18px] text-[25px] border-yellow-200">
             Contact US
           </h1>
           <ul>
