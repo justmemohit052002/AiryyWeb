@@ -26,7 +26,7 @@ const MouseFollowCircle = () => {
 
   return (
     <div
-      className="w-10 h-10 z-[10000000] border-2 rounded-full border-[#e87b38] fixed transform -translate-x-1/2 -translate-y-1/2 pointer-events-none"
+      className="w-10 h-10 z-[10000000] border-2 rounded-full border-yellow-400 fixed transform -translate-x-1/2 -translate-y-1/2 pointer-events-none"
       style={{ left: position.x, top: position.y }}
     ></div>
   );

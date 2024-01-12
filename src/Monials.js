@@ -8,7 +8,7 @@ export const monials = [
       "Airyy rides se bike rent kiya indore main easy process daam kaam aur lajawaab experience. indore main bike rent chaiye toh airyy rides hi sahi simple sasta aur top notch service.",
   },
   {
-    image: "",
+    image: "https://lh3.googleusercontent.com/a-/ALV-UjXcowtM4bBa1sVHxOY6RQ5LaltCzfOLs_FNF176yj92AmWZ=w60-h60-p-rp-mo-br100",
     name: "Isha Patil",
     Discription:
       "Indore ghoomne ka plan? Toh AiRYY Rides se bike rent karlo. Super quick, budget-friendly aur full dhamaal!",
@@ -28,17 +28,12 @@ export const monials = [
       "The prices are budgetfriendly as well as the 2 wheeler condition was good. Over all good experience.",
   },
   {
-    image: "",
+    image: "https://lh3.googleusercontent.com/a-/ALV-UjVOBJ6_B1JjAv2jf1LT2nHRwfFCILn_jj0tvlMebVcIjVgI=w60-h60-p-rp-mo-br100",
     name: "Tanay Shitole",
     Discription:
       "AiRYY Rides made my trip cool. Rented a bike in Indore, quick, cheap, and fun.",
   },
-  {
-    image: "",
-    name: "Vishwaksen Tripathi",
-    Discription:
-      "Service is good and condition of bikes available is also good, overall good place to rent a bike.",
-  },
+ 
   {
     image: "https://lh3.googleusercontent.com/a-/ALV-UjUmgFB2DIm67Ol_97Cb_ptX_oiikcK545btGX9ZniVfhzA=w75-h75-p-rp-mo-br100",
     name: "Sumit Patidar",
