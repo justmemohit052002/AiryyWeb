@@ -1,9 +1,12 @@
-import React from 'react'
-import Fade from "react-reveal/Fade"; 
+import React from "react";
+import Fade from "react-reveal/Fade";
 
 const About = () => {
   return (
-    <div id="NewRootRoot" className="flex flex-row w-full  snap-center snap-mandatory   items-start">
+    <div
+      id="NewRootRoot"
+      className="flex flex-row w-full  snap-center snap-mandatory   items-start"
+    >
       <div
         id="About"
         className="overflow-hidden     relative flex flex-row w-full font-['Inter'] items-start pt-[0px] px-[209px]"
@@ -51,6 +54,6 @@ const About = () => {
       </div>
     </div>
   );
-}
+};
 
-export default About
+export default About;
