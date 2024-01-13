@@ -17,11 +17,11 @@ function Footer() {
 
       <div
         id="Footer"
-        className="w-full  snap-end  pb-20  h-3/4 xs:h-full xs:mb-20 "
+        className="w-full   pb-20  h-3/4 xs:h-full xs:mb-20 "
       >
-        <div className="md:flex-row sm:flex-col ss:flex-col xs:flex-col flex flex-row items-center justify-around px-14">
+        <div className="md:flex-row sm:flex-col ss:flex-col xs:flex-col flex  items-center justify-around px-14">
           <div className="xs:flex xs:flex-col ml-20 xs:ml-40 ">
-            <div className="flex w-screen xs:justify-start  xs:items-center ">
+            <div className="flex-auto xs:w-screen xs:justify-start  xs:items-center ">
               <a
                 className="cursor-pointer outline-none transition duration-150 ease-in-out focus-visible:ring-2 focus-visible:ring-slate-7"
                 onClick={() => scrollToSection("Nav")}
@@ -33,7 +33,7 @@ function Footer() {
                 />
               </a>
             </div>
-            <div className="mr-10 w-screen flex xs:justify-start xs:items-center">
+            <div className="xs:mr-10 xs:w-screen xs:flex xs:justify-start xs:items-center">
             <h2 className="dark:text-gray-300 ml-6 font-poppins mt-1  xs:mb-20  xs:text-[18px] text-[20px] font-medium">
               Rent it now!
             </h2>
