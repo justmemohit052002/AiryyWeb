@@ -1,37 +1,47 @@
-'use client'
-import React, { useEffect, useState } from "react";
+import React, { useState, useEffect } from "react";
 import CanvasModel from "./3dLogo/CanvasModel";
 import { CiMenuBurger } from "react-icons/ci";
 import Logo from "../assets/airryLogo.webp";
 
 const Navbar = () => {
+
   const scrollToSection = (sectionId) => {
     const section = document.getElementById(sectionId);
     if (section) {
       section.scrollIntoView({ behavior: "smooth" });
     }
   };
-
-  const [MobileMenu, setMobileMenu] = useState(false);
-  const [header, setHeader] = useState(false);
-
-  const scrollHeader = () => {
-    if (window.scrollY >= 292) {
-      setHeader(true)
-    } else {
-      setHeader(false)
-    }
-  }
+  const [isScrolled, setIsScrolled] = useState(false);
 
   useEffect(() => {
-    window.addEventListener('scroll', scrollHeader)
+    const handleScroll = () => {
+      const scrollTop = window.scrollY;
+
+      // You can adjust the scroll threshold as needed
+      if (scrollTop > 50) {
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(false);
+      }
+    };
+
+    // Attach the scroll event listener when the component mounts
+    window.addEventListener('scroll', handleScroll);
+
+    // Clean up the event listener when the component unmounts
     return () => {
-      window.addEventListener('scroll', scrollHeader)
-    }
-  }, [])
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
+  const headerClass = `snap-start z-[139] top-0 border-b ${isScrolled ? 'bg-white backdrop-blur-sm' : 'border-transparent'
+    }`;
+
+
+  const [MobileMenu, setMobileMenu] = useState(false);
   return (
-    <div className={header ? "fixed w-[100%] text-[#ffffff] bg-[yellow]" : "bg-[transparent]"}>
-      <header className="sticky snap-start z-[139] top-0 border-b border-transparent backdrop-blur-sm ">
+    <div className="">
+      <header className={headerClass}>
         <div className="md:max-w-7xl mx-auto w-full max-w-5xl px-6">
           <div className="absolute left-0 top-0 z-20 flex w-full flex-col items-center bg-root md:hidden">
             <div className="flex w-full items-center px-6 py-4">
