@@ -25,7 +25,7 @@ const BlockquoteComponent = ({ monial, index }) => {
         {/* name */}
         <div className="mb-28 sm:ml-2 xs:text-[1rem] w-14 pl-4 flex justify-center">{monial.name}</div>
       </div>
-      <div className="border border-[#FFD600] ml-4 h-[20rem]"/>
+      
 
       
     </div>
@@ -71,7 +71,7 @@ const Testimonials = () => {
 
         created(s) {
           s.moveToIdx(5, true, {
-            duration: animationDuration,
+            duration: 50000,
             easing: (t) => t,
           });
         },
@@ -152,8 +152,8 @@ const Testimonials = () => {
 
   return (
     <>
-      <div id='Testimonials' className="Testimonials  snap-center xs:snap-start snap-mandatory flex flex-row  xs:flex-col justify-between items-center px-40   xs:px-0  xs:py-10 ">
-        <div className="relative  -top-20 left-60 right-0  xs:-top-20 xs:-left-[10rem]    -z-9 h-[400px] xs:h-[330px] w-full">
+      <div id='Testimonials' className="Testimonials   snap-center xs:snap-start snap-mandatory flex flex-row  xs:flex-col justify-between items-center px-40   xs:px-0  xs:py-10 ">
+        <div className="relative  -top-20 left-60 right-0  xs:-top-10 xs:-left-[10rem]    -z-9 h-[400px] xs:h-[330px] w-full">
           <svg
             className="absolute"
             width="1132"

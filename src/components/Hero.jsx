@@ -16,7 +16,7 @@ const Hero = () => {
       {/* Mobile */}
 
       <div className="absolute sm:hidden   left-[20px] sm:left-[55px]">
-        <div className="relative z-10 top-[210px] ">
+        <div className="relative z-10 top-[260px] ">
           <motion.span className="text-yellow-500 xs:text-5xl ss:text-5xl  sm:text-6xl   font-medium font-poppins uppercase leading-[48px] tracking-[2.88px]">
             Great Rides
           </motion.span>
@@ -32,11 +32,11 @@ const Hero = () => {
           </motion.span>
         </div>
 
-        <div className=" max-w-1 cursor-pointer sm:hidden relative top-[240px] z-full  z-10">
+        <div className=" max-w-1 cursor-pointer sm:hidden relative top-[280px] z-full  z-10">
           <div className="w-[145px] h-[38px] px-4 py-5 dark:bg-white bg-black rounded-md justify-center items-center gap-3.5 inline-flex">
-            <div className="dark:text-black text-white text-sm font-semibold font-poppins leading-[18px]">
+            <a onClick={handleRentNowClick} className="dark:text-black text-white text-sm font-semibold font-poppins leading-[18px]">
               Contact Now 
-            </div>
+            </a>
           </div>
         </div>
       </div>

@@ -27,15 +27,15 @@ const Contact = () => {
     <motion.div
       ref={ref}
       id="Contact"
-      className="flex snap-center   flex-row w-full items-start"
+      className="flex snap-start mt-[9.2rem]  flex-row w-full items-start"
     >
       <div
         id="Desktop"
-        className="xs:flex xs:flex-col overflow-hidden relative flex flex-row w-full font-poppins items-start"
+        className="xs:flex xs:flex-col overflow-hidden relative flex   flex-row w-full font-poppins items-start"
       >
         <div
           id="Ellipse1"
-          className="xs:w-[530px]  xs:ml-[-223px] xs:flex xs:flex-col bg-[linear-gradient(73deg,_rgba(17,_16,_15,_0.3)_13%,rgba(238,_200,_0,_0)_82%)] bg-cover bg-50%_50% bg-blend-normal bg-no-repeat relative flex flex-col gap-16 w-3/5 h-[1017px] items-start xs:mt-[-163px] mt-[-92px] xs:mb-[-192px]  mb-[-92px] ml-[-163px] pt-56 xs:pb-[229px] pb-[269px]   pl-48 rounded-[50%]"
+          className="xs:w-[530px]  xs:ml-[-223px] xs:flex xs:flex-col bg-[linear-gradient(73deg,_rgba(17,_16,_15,_0.3)_13%,rgba(238,_200,_0,_0)_82%)] bg-cover bg-50%_50% bg-blend-normal bg-no-repeat relative flex flex-col gap-16 w-3/5 h-[1017px] items-start xs:mt-[-163px] mt-[-92px] xs:mb-[-192px]   mb-[-92px] ml-[-163px] pt-56 xs:pb-[229px] pb-[269px]   pl-48 rounded-[50%]"
         >
           <div className="xs:justify-start xs:items-start flex flex-col gap-5 w-3/5 font-poppins items-start mb-1 ml-48 xs:ml-14 xs:w-full">
             <div
@@ -57,7 +57,7 @@ const Contact = () => {
               Click on Map to Reach the Pickup location.
             </span>
             <iframe
-              className="w-full  rounded-[2rem]"
+              className="xs:w-80 max-w-full rounded-[2rem]"
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3687.467957738305!2d75.86182427385859!3d22.687931523086643!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3962fd038adfe389%3A0x2aa0548bdd308fea!2sAiRYY%20Rides!5e0!3m2!1sen!2sin!4v1704033687769!5m2!1sen!2sin"
               allowfullscreen=""
               loading="lazy"
@@ -129,21 +129,21 @@ const Contact = () => {
           >
             
               <input
-                className="placeholder-black xs:w-72"
+                className="placeholder-black xs:w-[19rem]"
                 type="text"
                 required
                 placeholder="Name"
                 name="name"
               />
               <input
-                className="placeholder-black xs:w-72"
+                className="placeholder-black xs:w-[19rem]"
                 type="email"
                 required
                 placeholder="Email"
                 name="email"
               />
               <textarea
-                className="placeholder-black h-full w-full xs:w-72 bg-gray-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10 border border-gray-100"
+                className="placeholder-black h-full w-full xs:w-[19rem] bg-gray-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10 border border-gray-100"
                 rows={8}
                 placeholder="Message"
                 name="message"

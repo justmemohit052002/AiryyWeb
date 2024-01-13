@@ -6,13 +6,13 @@ const Services = () => {
     <>
     <div
       id="Services"
-      className="Services snap-center    z-[10]  h-screen mt-20 relative xs:w-full"
+      className="Services  snap-center xs:snap-start   z-[10]  h-screen  relative xs:w-full"
     >
       {/* Parent container with opacity */}
 
 
       {/* Heading outside the parent container with opacity */}
-      <h1 className=" dark:text-white text-center font-poppins xs:text-[25px]  ss:text-[20px] text-[35px] font-bold mb-4 xs:pt-40 md:mb-0 md:col-span-3">
+      <h1 className=" dark:text-white text-center font-poppins xs:text-[25px]  ss:text-[20px] text-[35px] font-bold mb-4 xs:pt-20 md:mb-0 md:col-span-3">
         Why Choose AiRYY Rides?
       </h1>
     
@@ -108,7 +108,7 @@ const Services = () => {
           </div>
 
           {/* Box 3 */}
-          <div className="group snap-center  snap-mandatory xs:w-[200px] xs:h-[300px] w-[250px] h-[327px] flex-col justify-center items-center gap-[25px] inline-flex bg-slate-50 hover:bg-gradient-to-t from-black to-yellow-400 rounded-[30px] transition-all duration-500">
+          <div className="group  snap-center xs:snap-start snap-mandatory xs:w-[200px] xs:h-[300px] w-[250px] h-[327px] flex-col justify-center items-center gap-[25px] inline-flex bg-slate-50 hover:bg-gradient-to-t from-black to-yellow-400 rounded-[30px] transition-all duration-500">
             <svg
               width="210"
               height="297"
@@ -217,7 +217,7 @@ const Services = () => {
        
     </div>
     
-     <div className="w-full -z-9 h-[750px] relative bg-gradient-to-b  from-yellow-400 via-transparent to-transparent rounded-3xl flex items-center justify-right -top-[720px] ">
+     <div className="w-full -z-9 h-[750px] relative bg-gradient-to-b  from-yellow-400 via-transparent to-transparent rounded-3xl flex items-center justify-right xs:-top-[820px] -top-[720px] ">
      {/* This container has opacity, and the heading is outside it */}
    </div>
    </>

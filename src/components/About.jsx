@@ -6,15 +6,15 @@ const About = () => {
     <>
       <div
         id="NewRootRoot"
-        className="flex flex-row w-full  xs:hidden snap-center snap-mandatory   items-start"
+        className="flex flex-row w-full  xs:hidden     items-start"
       >
         <div
           id="About"
-          className="overflow-hidden     relative flex flex-row w-full font-['Inter'] items-start pt-[0px] px-[209px]"
+          className="overflow-hidden     relative flex flex-row w-full font-['Inter']  snap-end  snap-mandatory items-start pt-[0px] px-[209px]"
         >
           <div
             id="Ellipse"
-            className="w-4/6 h-[870px] bg-[linear-gradient(180deg,_#ffd600_0%,rgba(10,_10,_9,_0)_88%)] opacity-60 bg-cover bg-50%_50% bg-blend-normal bg-no-repeat absolute  left-[-84px] flex flex-col gap-24 items-start top-[7.6rem] rounded-[50%]"
+            className="w-4/6 h-[870px] bg-[linear-gradient(180deg,_#ffd600_0%,rgba(10,_10,_9,_0)_88%)] opacity-60 bg-cover bg-50%_50% bg-blend-normal bg-no-repeat absolute  left-[-84px] flex flex-col gap-24 items-start top-[9.2rem] rounded-[50%]"
           ></div>
           <div
             id="Ellipse1"
@@ -55,9 +55,11 @@ const About = () => {
         </div>
       </div>
 
+
+{/* Mobile */}
       <div
         id="About"
-        className="overflow-hidden    sm:hidden  snap-start snap-mandatory  relative  w-full font-['Inter'] items-start "
+        className="overflow-hidden  mt-10  sm:hidden  snap-start snap-mandatory  relative  w-full font-['Inter'] items-start "
       >
         <div className="w-[360px] h-[640px] relative ">
         <div className="w-[560px] h-[340px]  bg-gradient-to-b from-yellow-400 to-black" />

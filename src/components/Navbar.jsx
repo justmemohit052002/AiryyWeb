@@ -10,6 +10,12 @@ const Navbar = () => {
       section.scrollIntoView({ behavior: "smooth" });
     }
   };
+  const whatsappNumber = "8109475317"; 
+
+  const handleRentNowClick = () => {
+    const whatsappLink = `https://wa.me/${whatsappNumber}`;
+    window.location.href = whatsappLink;
+  };
 
   const [MobileMenu, setMobileMenu] = useState(false);
   return (
@@ -82,7 +88,7 @@ const Navbar = () => {
                 <div className="flex w-full flex-col">
                   <a
                     className="text-base h-11 pl-4 pr-4 rounded-md gap-2 font-semibold bg-white text-black hover:bg-white/90 focus-visible:ring-2 focus-visible:ring-white/20 focus-visible:outline-none focus-visible:bg-white/90 disabled:hover:bg-white inline-flex items-center border justify-center select-none disabled:cursor-not-allowed disabled:opacity-70 transition ease-in-out duration-200 mb-4 w-full"
-                    href="/signup"
+                    onClick={{handleRentNowClick}}
                   >
                     Contact Now
                   </a>
