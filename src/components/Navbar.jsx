@@ -1,47 +1,26 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import CanvasModel from "./3dLogo/CanvasModel";
 import { CiMenuBurger } from "react-icons/ci";
-import Logo from "../assets/airryLogo.webp";
+import Logo from "../assets/airyyLogo.png";
 
 const Navbar = () => {
-
   const scrollToSection = (sectionId) => {
     const section = document.getElementById(sectionId);
     if (section) {
       section.scrollIntoView({ behavior: "smooth" });
     }
   };
-  const [isScrolled, setIsScrolled] = useState(false);
+  const whatsappNumber = "8109475317";
 
-  useEffect(() => {
-    const handleScroll = () => {
-      const scrollTop = window.scrollY;
-
-      // You can adjust the scroll threshold as needed
-      if (scrollTop > 50) {
-        setIsScrolled(true);
-      } else {
-        setIsScrolled(false);
-      }
-    };
-
-    // Attach the scroll event listener when the component mounts
-    window.addEventListener('scroll', handleScroll);
-
-    // Clean up the event listener when the component unmounts
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, []);
-
-  const headerClass = `snap-start z-[139] top-0 border-b ${isScrolled ? 'bg-white backdrop-blur-sm' : 'border-transparent'
-    }`;
-
+  const handleRentNowClick = () => {
+    const whatsappLink = `https://wa.me/${whatsappNumber}`;
+    window.location.href = whatsappLink;
+  };
 
   const [MobileMenu, setMobileMenu] = useState(false);
   return (
-    <div className="">
-      <header className={headerClass}>
+    <div id='Nav' className="">
+      <header className="sticky snap-start z-[139]  border-b border-transparent  ">
         <div className="md:max-w-7xl mx-auto w-full max-w-5xl px-6">
           <div className="absolute left-0 top-0 z-20 flex w-full flex-col items-center bg-root md:hidden">
             <div className="flex w-full items-center px-6 py-4">
@@ -57,7 +36,7 @@ const Navbar = () => {
                   />
                 </a>
               </div>
-              <div className="flex flex-auto justify-end">
+              <div className="flex flex-auto dark:text-white justify-end">
                 <button
                   aria-controls="mobile-menu"
                   aria-expanded="false"
@@ -109,23 +88,24 @@ const Navbar = () => {
                 <div className="flex w-full flex-col">
                   <a
                     className="text-base h-11 pl-4 pr-4 rounded-md gap-2 font-semibold bg-white text-black hover:bg-white/90 focus-visible:ring-2 focus-visible:ring-white/20 focus-visible:outline-none focus-visible:bg-white/90 disabled:hover:bg-white inline-flex items-center border justify-center select-none disabled:cursor-not-allowed disabled:opacity-70 transition ease-in-out duration-200 mb-4 w-full"
-                    href="/signup"
+                    onClick={{ handleRentNowClick }}
                   >
                     Contact Now
                   </a>
                   <a
                     className="text-md block w-full border-b border-slate-6 py-4 font-semibold text-slate-11 transition duration-200 ease-in-out last:border-none hover:text-slate-12"
-                    href="/about"
+                    onClick={() => scrollToSection("About")}
                   >
                     About
                   </a>
 
                   <a
                     className="text-md block w-full border-b border-slate-6 py-4 font-semibold text-slate-11 transition duration-200 ease-in-out last:border-none hover:text-slate-12"
-                    href="/contact"
+                    onClick={() => scrollToSection("Contact")}
                   >
                     Contact
                   </a>
+
                 </div>
               </div>
             ) : null}
@@ -154,7 +134,7 @@ const Navbar = () => {
             <ul className="flex items-center gap-4">
               <li>
                 <a
-                  className="cursor-pointer outline-none transition duration-150 ease-in-out focus-visible:ring-2 focus-visible:ring-slate-7 rounded-md px-1 py-1 text-sm font-medium text-slate-11 hover:text-slate-12 focus-visible:text-slate-12 lg:px-2"
+                  className="cursor-pointer dark:text-white outline-none transition duration-150 ease-in-out focus-visible:ring-2 focus-visible:ring-slate-7 rounded-md px-1 py-1 text-sm font-medium text-slate-11 hover:text-slate-12 focus-visible:text-slate-12 lg:px-2"
                   onClick={() => scrollToSection("About")}
                 >
                   About
@@ -163,7 +143,7 @@ const Navbar = () => {
 
               <li>
                 <a
-                  className="cursor-pointer outline-none transition duration-150 ease-in-out focus-visible:ring-2 focus-visible:ring-slate-7 rounded-md px-1 py-1 text-sm font-medium text-slate-11 hover:text-slate-12 focus-visible:text-slate-12 lg:px-2"
+                  className="cursor-pointer dark:text-white outline-none transition duration-150 ease-in-out focus-visible:ring-2 focus-visible:ring-slate-7 rounded-md px-1 py-1 text-sm font-medium text-slate-11 hover:text-slate-12 focus-visible:text-slate-12 lg:px-2"
                   onClick={() => scrollToSection("Services")}
                 >
                   Services
@@ -171,7 +151,7 @@ const Navbar = () => {
               </li>
               <li>
                 <a
-                  className="cursor-pointer outline-none transition duration-150 ease-in-out focus-visible:ring-2 focus-visible:ring-slate-7 rounded-md px-1 py-1 text-sm font-medium text-slate-11 hover:text-slate-12 focus-visible:text-slate-12 lg:px-2"
+                  className="cursor-pointer dark:text-white outline-none transition duration-150 ease-in-out focus-visible:ring-2 focus-visible:ring-slate-7 rounded-md px-1 py-1 text-sm font-medium text-slate-11 hover:text-slate-12 focus-visible:text-slate-12 lg:px-2"
                   onClick={() => scrollToSection("Testimonials")}
                 >
                   Testimonials
@@ -180,15 +160,15 @@ const Navbar = () => {
               <li
               >
                 <a
-                  className="cursor-pointer outline-none transition duration-150 ease-in-out focus-visible:ring-2 focus-visible:ring-slate-7 rounded-md px-1 py-1 text-sm font-medium text-slate-11 hover:text-slate-12 focus-visible:text-slate-12 lg:px-2"
-                  onClick={() => scrollToSection("Electric")}
+                  className="cursor-pointer dark:text-white outline-none transition duration-150 ease-in-out focus-visible:ring-2 focus-visible:ring-slate-7 rounded-md px-1 py-1 text-sm font-medium text-slate-11 hover:text-slate-12 focus-visible:text-slate-12 lg:px-2"
+                  onClick={() => scrollToSection("Bikes")}
                 >
                   Electric
                 </a>
               </li>
               <li>
                 <a
-                  className="cursor-pointer outline-none transition duration-150 ease-in-out focus-visible:ring-2 focus-visible:ring-slate-7 rounded-md px-1 py-1 text-sm font-medium text-slate-11 hover:text-slate-12 focus-visible:text-slate-12 lg:px-2"
+                  className="cursor-pointer dark:text-white outline-none transition duration-150 ease-in-out focus-visible:ring-2 focus-visible:ring-slate-7 rounded-md px-1 py-1 text-sm font-medium text-slate-11 hover:text-slate-12 focus-visible:text-slate-12 lg:px-2"
                   onClick={() => scrollToSection("Contact")}
                 >
                   Contact
@@ -198,7 +178,7 @@ const Navbar = () => {
             <div class="flex gap-4">
 
               <a
-                class="outline-none  focus-visible:ring-slate-7 text-sm h-10 pl-4 pr-2 gap-0 font-semibold bg-white text-black hover:bg-white/90 focus-visible:ring-4 focus-visible:ring-white/30 focus-visible:outline-none focus-visible:bg-white/90 disabled:hover:bg-white inline-flex items-center border justify-center select-none rounded-full disabled:cursor-not-allowed disabled:opacity-70 transition ease-in-out duration-200"
+                class="outline-none  cursor-pointer focus-visible:ring-slate-7 text-sm h-10 pl-4 pr-2 gap-0 font-semibold bg-white text-black hover:bg-white/90 focus-visible:ring-4 focus-visible:ring-white/30 focus-visible:outline-none focus-visible:bg-white/90 disabled:hover:bg-white inline-flex items-center border justify-center select-none rounded-full disabled:cursor-not-allowed disabled:opacity-70 transition ease-in-out duration-200"
                 data-state="closed"
 
               >

@@ -27,48 +27,57 @@ const Contact = () => {
     <motion.div
       ref={ref}
       id="Contact"
-      className="flex snap-center   flex-row w-full items-start"
+      className="flex snap-start mt-[9.2rem]  flex-row w-full items-start"
     >
       <div
         id="Desktop"
-        className="overflow-hidden bg-black relative flex flex-row w-full font-poppins items-start"
+        className="xs:flex xs:flex-col overflow-hidden relative flex   flex-row w-full font-poppins items-start"
       >
         <div
           id="Ellipse1"
-          className="bg-[linear-gradient(73deg,_rgba(17,_16,_15,_0.3)_13%,rgba(238,_200,_0,_0)_82%)] bg-cover bg-50%_50% bg-blend-normal bg-no-repeat relative flex flex-col gap-16 w-3/5 h-[1017px] items-start mt-[-93px] mb-[-92px] ml-[-163px] pt-56 pb-[269px] pl-48 rounded-[50%]"
+          className="xs:w-[530px]  xs:ml-[-223px] xs:flex xs:flex-col bg-[linear-gradient(73deg,_rgba(17,_16,_15,_0.3)_13%,rgba(238,_200,_0,_0)_82%)] bg-cover bg-50%_50% bg-blend-normal bg-no-repeat relative flex flex-col gap-16 w-3/5 h-[1017px] items-start xs:mt-[-163px] mt-[-92px] xs:mb-[-192px]   mb-[-92px] ml-[-163px] pt-56 xs:pb-[229px] pb-[269px]   pl-48 rounded-[50%]"
         >
-          <div className="flex flex-col gap-5 w-3/5 font-poppins items-start mb-1 ml-48">
+          <div className="xs:justify-start xs:items-start flex flex-col gap-5 w-3/5 font-poppins items-start mb-1 ml-48 xs:ml-14 xs:w-full">
             <div
               id="GetInTouch"
-              className="text-5xl font-poppins tracking-[6.48] uppercase text-white "
+              className="xs:flex xs:justify-start xs:items-start xs:text-xl text-3xl font-poppins tracking-[6.48] uppercase dark:text-white "
             >
-              Get in Touch.{" "}
+              <p className="xs:ml-2">Get in Touch. </p>
             </div>
-            <div className="text-wrap w-full text-xl font-poppins font-medium uppercase text-[#d3d0d0]">
-              Have questions or need assistance? We are here to help. Contact
-              our friendly team at AiRYY Rides for any inquiries, support or
-              partnership opportunities.
+            <div className="xs:text-[12px] xs:mr-0 xs:px-2  xs:flex xs:justify-start xs:items-start text-justify w-full text-xl font-poppins font-medium  dark:text-[#d3d0d0]">
+              <p className="xs:text-justify">
+                Have questions or need assistance? We are here to help. Contact
+                our friendly team at AiRYY Rides for any inquiries, support or
+                partnership opportunities.
+              </p>
             </div>
           </div>
-          <div className="relative z-[1001] h-96 left-48">
-            <span className="block font-poppins font-medium uppercase">
+          <div className="relative z-[1001] xs:h-20 h-96 xs:p-3 xs:top-[-60px] xs:left-[50px] left-48">
+            <span className="block font-poppins xs:text-[12px] xs:ml-2 dark:text-white font-medium uppercase">
               Click on Map to Reach the Pickup location.
             </span>
             <iframe
-              className=" w-full   rounded-[2rem]"
+              className="xs:w-80 max-w-full rounded-[2rem]"
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3687.467957738305!2d75.86182427385859!3d22.687931523086643!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3962fd038adfe389%3A0x2aa0548bdd308fea!2sAiRYY%20Rides!5e0!3m2!1sen!2sin!4v1704033687769!5m2!1sen!2sin"
               allowfullscreen=""
               loading="lazy"
               referrerpolicy="no-referrer-when-downgrade"
             ></iframe>
-             <div className="flex  flex-row gap-3 mt-4 ">
-            <CiFacebook className="cursor-pointer" size={28} />
-            <RiTwitterXLine className="cursor-pointer" size={28} />
-            <FaInstagram className="cursor-pointer" size={28} />
+            <div className="xs:ml-5 flex dark:text-white  flex-row gap-3 mt-6 ">
+              <CiFacebook
+                className="cursor-pointer xs:text-[20px] text-[28px]"
+              //  size={28}
+              />
+              <RiTwitterXLine
+                className="cursor-pointer xs:text-[20px] text-[28px]"
+              // size={28}
+              />
+              <FaInstagram
+                className="cursor-pointer xs:text-[20px] text-[28px]"
+              // size={28}
+              />
+            </div>
           </div>
-          </div>
-
-        
         </div>
 
         <div
@@ -78,20 +87,24 @@ const Contact = () => {
 
         {/* form */}
 
-        <div className="formContainer z-[1000] top-32 px-10">
+        <div className="formContainer  xs:z-[1000] z-[1000] xs:top-[-190px]  top-32 xs:px-20 px-10">
           <motion.div
-            className="phoneSvg mt-20"
+            className="phoneSvg mt-0 "
             initial={{ opacity: 1 }}
             whileInView={{ opacity: 0 }}
-            transition={{ delay: 3, duration: 1 }}
+            transition={{ delay: 2, duration: 1 }}
           >
-            <svg width="450px" height="450px" viewBox="0 0 32.666 32.666">
+            <svg
+              className="xs:h-[280px] xs:w-[280px] h-[450px] w-[450px]"
+              viewBox="0 0 32.666 32.666"
+            >
               <motion.path
                 strokeWidth={0.2}
                 fill="none"
                 initial={{ pathLength: 0 }}
                 animate={isInView && { pathLength: 1 }}
                 transition={{ duration: 3 }}
+                end={{ pathLength: 0 }}
                 d="M28.189,16.504h-1.666c0-5.437-4.422-9.858-9.856-9.858l-0.001-1.664C23.021,4.979,28.189,10.149,28.189,16.504z
             M16.666,7.856L16.665,9.52c3.853,0,6.983,3.133,6.981,6.983l1.666-0.001C25.312,11.735,21.436,7.856,16.666,7.856z M16.333,0
             C7.326,0,0,7.326,0,16.334c0,9.006,7.326,16.332,16.333,16.332c0.557,0,1.007-0.45,1.007-1.006c0-0.559-0.45-1.01-1.007-1.01
@@ -109,33 +122,38 @@ const Contact = () => {
             </svg>
           </motion.div>
           <motion.form
-          className="mt-20"
+            className="-ml-12 xs:w-full xs:flex xs:flex-col"
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
-            transition={{ delay: 4, duration: 1 }}
+            transition={{ delay: 2.5, duration: 1 }}
           >
+
             <input
-              className="placeholder-black"
+              className="placeholder-black xs:w-[19rem]"
               type="text"
               required
               placeholder="Name"
               name="name"
             />
             <input
-              className="placeholder-black"
+              className="placeholder-black xs:w-[19rem]"
               type="email"
               required
               placeholder="Email"
               name="email"
             />
             <textarea
-              className="placeholder-black"
+              className="placeholder-black h-full w-full xs:w-[19rem] bg-gray-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10 border border-gray-100"
               rows={8}
               placeholder="Message"
               name="message"
             />
-            <button>Submit</button>
-           
+            <div className="flex xs:w-72 justify-center items-center">
+              <span className="bg-gray-900 xs:w-72  w-full py-3 rounded-2xl text-center cursor-pointer uppercase text-yellow-400 font-bold">
+                Submit
+              </span>
+            </div>
+
           </motion.form>
         </div>
       </div>

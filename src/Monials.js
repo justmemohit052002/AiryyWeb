@@ -1,46 +1,47 @@
-import Img1 from '../src/assets/ritu.jpg'
-import Img2 from '../src/assets/ritu.jpg'
-import Img3 from '../src/assets/Pk.jpg'
-import Img4 from '../src/assets/pjd.jpeg'
-import Img5 from '../src/assets/ritu.jpg'
-
 export const monials = [
   {
-    image: Img1,
-    name: "Piyush",
+    image:
+      "https://lh3.googleusercontent.com/a-/ALV-UjWNPlcFP0ZnA72N29hPP3JuDmiDyohsyqRS5ZqX9VBcTA=w75-h75-p-rp-mo-br100",
+    name: "Sanket Sharma",
     Discription:
-      "Matani Architects turned our dream home into a reality. Their attention to detail, creativity, and commitment to quality were exceptional. We couldn't be happier with the outcome.",
+      "Airyy rides se bike rent kiya indore main easy process daam kaam aur lajawaab experience. indore main bike rent chaiye toh airyy rides hi sahi simple sasta aur top notch service.",
   },
   {
-    image: Img2,
-    name: "Naman",
+    image:
+      "https://lh3.googleusercontent.com/a-/ALV-UjXcowtM4bBa1sVHxOY6RQ5LaltCzfOLs_FNF176yj92AmWZ=w60-h60-p-rp-mo-br100",
+    name: "Isha Patil",
     Discription:
-      "Working with Matani Architects was a delightful experience. They took the time to understand our needs and incorporated them into a design that exceeded our expectations. Their professionalism and vision made our home truly special.",
-  },
-
-  {
-    image: Img3,
-    name: "Mohit",
-    Discription:
-      "We chose Matani Architects for our home renovation, and it was one of the best decisions we've made. Their team's expertise and ability to blend modern design with our traditional style were remarkable. Our home feels brand new yet maintains its classic charm.",
+      "Indore ghoomne ka plan? Toh AiRYY Rides se bike rent karlo. Super quick, budget-friendly aur full dhamaal!",
   },
 
   {
-    image: Img4,
-    name: "Priyanshu",
+    image:
+      "https://lh3.googleusercontent.com/a-/ALV-UjWlFmTmuY3xuEuL4cLfgX0a_EBxuUylmbNBcGsEu62j5kY=w75-h75-p-rp-mo-br100",
+    name: "Anubhav Singh",
     Discription:
-      "From the initial concept to the final construction, Matani Architects was with us every step of the way. Their designs not only optimized our space but also brought an aesthetic appeal we had never imagined. Highly recommended!",
+      "Best service among all the dealers available in Indore ... One of the best bikes. Great experience.",
+  },
+
+  {
+    image:
+      "https://lh3.googleusercontent.com/a-/ALV-UjU9LJVAxmR9NusvIM_f8Sd8RTRgY1si2r-poTlCzd2gGwNO=w75-h75-p-rp-mo-br100",
+    name: "Nrupa Shah",
+    Discription:
+      "The prices are budgetfriendly as well as the 2 wheeler condition was good. Over all good experience.",
   },
   {
-    image: Img5,
-    name: "Vishall",
+    image:
+      "https://lh3.googleusercontent.com/a-/ALV-UjVOBJ6_B1JjAv2jf1LT2nHRwfFCILn_jj0tvlMebVcIjVgI=w60-h60-p-rp-mo-br100",
+    name: "Tanay Shitole",
     Discription:
-      "We hired Matani Architects for our custom-built home, and we were thoroughly impressed. Their innovative approach, use of sustainable materials, and dedication to our project made the entire process smooth and enjoyable. Our home is a testament to their expertise.",
+      "AiRYY Rides made my trip cool. Rented a bike in Indore, quick, cheap, and fun.",
   },
+
   {
-    title: Img5,
-    name: "Kanya",
+    image:
+      "https://lh3.googleusercontent.com/a-/ALV-UjUmgFB2DIm67Ol_97Cb_ptX_oiikcK545btGX9ZniVfhzA=w75-h75-p-rp-mo-br100",
+    name: "Sumit Patidar",
     Discription:
-      "Matani Architects delivered beyond our expectations. They transformed our outdated house into a contemporary masterpiece. Their ability to blend functionality with aesthetics is truly remarkable. We are forever grateful for their exceptional work.",
+      "AiRYY Rides is my go-to for bikes in Indore. Fast, cheap, and hassle-free rentals.",
   },
 ];

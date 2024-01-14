@@ -6,8 +6,8 @@ import b4 from '../assets/BikeImg4.png'
 import b5 from '../assets/BikeImg5.png'
 const Bikes = () => {
   return (
-    <div id="Bikes" className="snap-center  ">
-     <h1 className="text-center font-poppins text-[25px] mb-20 font-extrabold pb-14">Bikes Information</h1>
+    <div id="Bikes" className="h-screen  snap-center xs:snap-start ">
+      <h1 className="text-center dark:text-white  pt-10 font-poppins text-[25px] mb-20 font-extrabold pb-14">Bikes Information</h1>
       <div className="flex  justify-center items-center h-[200px] mb-44 flex-row gap-8">
         {/* Card 1 */}
 
@@ -15,7 +15,7 @@ const Bikes = () => {
           {/* Card content goes here */}
 
           <img src={b5} alt="img bike" />
-          <p className="py-5 text-bold text-[20px] font-poppins">
+          <p className="py-5 font-bold text-[20px] font-poppins">
             Total Electric Bikes
           </p>
           <p>18</p>
@@ -26,9 +26,9 @@ const Bikes = () => {
           {/* Card content goes here */}
 
           <img src={b4} alt="img bike" />
-          <p className="py-5 text-bold text-[20px] font-poppins">Range</p>
+          <p className="py-5 font-bold text-[20px] font-poppins">Range</p>
           <p className="w-40 text-center">
-             50 kilometres after being fully charged
+            50 kilometres after being fully charged
           </p>
         </div>
 
@@ -37,7 +37,7 @@ const Bikes = () => {
           {/* Card content goes here */}
 
           <img src={b3} alt="img bike" />
-          <p className="py-5 text-bold text-[20px] font-poppins">
+          <p className="py-5 font-bold text-[20px] font-poppins">
             Total Electric Bikes
           </p>
           <p>18</p>
@@ -48,7 +48,7 @@ const Bikes = () => {
           {/* Card content goes here */}
 
           <img src={b2} alt="img bike" />
-          <p className="py-5 text-bold text-[20px] font-poppins">
+          <p className="py-5 font-bold text-[20px] font-poppins">
             Total Electric Bikes
           </p>
           <p>18</p>
@@ -59,7 +59,7 @@ const Bikes = () => {
           {/* Card content goes here */}
 
           <img src={b1} alt="img bike" />
-          <p className="py-5 text-bold text-[20px] font-poppins">
+          <p className="py-5 font-bold text-[20px] font-poppins">
             Total Electric Bikes
           </p>
           <p>18</p>
