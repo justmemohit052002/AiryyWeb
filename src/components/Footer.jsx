@@ -128,6 +128,8 @@ function Footer() {
           <FaInstagram className="cursor-pointer mt-[0.06rem]" size={28} />
         </div>
       </div>
+
+      
     </>
   );
 }
