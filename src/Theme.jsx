@@ -80,11 +80,11 @@ const Theme = () => {
           )
         )}
       </div>
-      <a onClick={() => { scrollToSection('Nav') }} className={`fixed z-[1001] ${scrolling ? "z-[10000000]" : ""} text-white flex justify-end items-end h-full cursor-pointer right-0 bottom-10 md:-mr-9 xl:mr-10 ${scrolling ? "md:py-5 " : "md:py-0 "} bg-transparent`}>
+      <a onClick={() => { scrollToSection('Nav') }} className={`fixed z-[1001] ${scrolling ? "z-[10000000]" : ""} text-white    flex justify-end items-end h-10 cursor-pointer right-0 bottom-10 md:-mr-9 xl:mr-10 ${scrolling ? "md:py-5 " : "md:py-0 "} bg-transparent`}>
         <BsArrowUp
           onClick={() => scrollToSection('Nav')}
           style={{ height: "50px" }}
-          className={`xl:mx-5 text-white sm:mr-10`}
+          className={`xl:mx-5 text-white sm:mr-10 xs:mr-10`}
         />
      
       </a>
