@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import CanvasModel from "./3dLogo/CanvasModel";
 import { CiMenuBurger } from "react-icons/ci";
 import Logo from "../assets/airyyLogo.png";
@@ -18,8 +18,29 @@ const Navbar = () => {
   };
 
   const [MobileMenu, setMobileMenu] = useState(false);
+  const [navVisible, setNavVisible] = useState(true);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 0) {
+        if (navVisible) {
+          setNavVisible(false);
+        }
+      } else {
+        if (!navVisible) {
+          setNavVisible(true);
+        }
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, [navVisible]);
   return (
-    <div id='Nav' className="">
+    <div id='Nav' className={navVisible ? "block" : "hidden"}>
       <header className="sticky snap-start z-[139]  border-b border-transparent  ">
         <div className="md:max-w-7xl mx-auto w-full max-w-5xl px-6">
           <div className="absolute left-0 top-0 z-20 flex w-full flex-col items-center bg-root md:hidden">

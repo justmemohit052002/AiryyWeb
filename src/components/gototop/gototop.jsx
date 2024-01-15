@@ -1,64 +1,87 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import styled from "styled-components";
 import { FaArrowUp } from "react-icons/fa";
 
 const GoToTop = () => {
-    const [isVisible, setIsVisible] = useState(false);
+  const scrollRef = useRef(null);
 
-    const goToBtn = () => {
-        window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+
+
+  const [isVisible, setIsVisible] = useState(false);
+  const [isHomePage, setIsHomePage] = useState(true);
+  const [scrolling, setScrolling] = useState(false);
+
+  const scrollToSection = (sectionId) => {
+    const section = document.getElementById(sectionId);
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
+
+  useEffect(() => {
+
+
+
+    // Attach the scroll event listener to the ref
+    if (scrollRef.current) {
+      scrollRef.current.addEventListener("scroll", handleScroll);
+    }
+
+    // Clean up the event listener when the component unmounts
+    return () => {
+      if (scrollRef.current) {
+        scrollRef.current.removeEventListener("scroll", handleScroll);
+      }
     };
+  }, []);
 
-    const listenToScroll = () => {
-        let heightToHidden = 20;
-        const winScroll =
-            document.body.scrollTop || document.documentElement.scrollTop;
-
-        if (winScroll > heightToHidden) {
-            setIsVisible(true);
-        } else {
-            setIsVisible(false);
-        }
-    };
-
-    useEffect(() => {
-        window.addEventListener("scroll", listenToScroll);
-        return () => window.removeEventListener("scroll", listenToScroll);
-    }, []);
-
-    return (
-        <Wrapper>
-            {isVisible && (
-                <div className="top-btn" onClick={goToBtn}>
-                    <FaArrowUp className="top-btn--icon" />
-                </div>
-            )}
-        </Wrapper>
-    );
+  return (
+    <Wrapper ref={scrollRef}>
+      {isHomePage && (
+        <a
+          onClick={() => {
+            scrollToSection("Nav");
+          }}
+          className={`top-btn fixed z-[1001] ${scrolling ? "z-[10000000]" : ""
+            } text-white    flex justify-end items-end h-10 cursor-pointer right-0 bottom-10 md:-mr-9 xl:mr-0 ${scrolling ? "md:py-5 " : "md:py-0 "
+            } bg-transparent`}
+        >
+          <FaArrowUp
+            onClick={() => scrollToSection("Nav")}
+            style={{ height: "18px" }}
+            className="top-btn--icon "
+          />
+        </a>
+      )}
+    </Wrapper>
+  );
 };
 
-const Wrapper = styled.section`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
+
+
+
+const Wrapper = styled.section` 
 
   .top-btn {
     font-size: 2.4rem;
-    width: 6rem;
-    height: 6rem;
+    width: 3rem;
+    height: 3rem;
     color: #fff;
-    background-color: ${({ theme }) => theme.colors.btn};
-    box-shadow: ${({ theme }) => theme.colors.shadow};
+    background-color: #FDB813; 
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
     border-radius: 50%;
     position: fixed;
-    bottom: 5rem;
-    right: 5rem;
+    bottom: 2rem;
+    right: 2rem;
     z-index: 999;
     display: flex;
     justify-content: center;
     align-items: center;
     cursor: pointer;
+    
+
+
 
     &--icon {
       animation: gototop 1.2s linear infinite alternate-reverse;
@@ -74,12 +97,13 @@ const Wrapper = styled.section`
     }
   }
 
-  @media (max-width: ${({ theme }) => theme.media.mobile}) {
+  @media (max-width: 768px) { 
     .top-btn {
       right: 0;
       left: 40%;
     }
   }
+    
 `;
 
 export default GoToTop;
